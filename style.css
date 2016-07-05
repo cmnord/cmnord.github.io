@@ -1,0 +1,12 @@
+body {
+	height: 100%;
+	margin: 0;
+	text-align: left;
+	width: 100%;
+    font-family: Trebuchet, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+	font-size: 32px;
+    color: rgb(46,105,163);
+}
