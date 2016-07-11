@@ -36,15 +36,26 @@ body {
   margin-top: 28px;
 }
 
+#blog:before {
+  content: 'blog';
+}
+#blog:hover:before {
+  content: '\270E...';
+}
+
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
-
 footer li {
+  font-size: 10px;
   display: inline;
   margin: 5px;
+}
+
+footer p {
+  font-size: 12px;
 }
 
 /* Responsive: Portrait tablets and up */

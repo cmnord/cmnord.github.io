@@ -9,8 +9,8 @@
     
   var update = function() {
     var sym = document.getElementById('symbol');
-    //dingbats are from 0x2700 to 0x27bf
-    var symbol = String.fromCharCode(uniform(0x2700, 0x27c0));
+    //dingbats are from 0x2700 to 0x27bf, 2728-274b are stars
+    var symbol = String.fromCharCode(uniform(0x2728, 0x274b));
     sym.innerHTML = symbol;
   };
 
