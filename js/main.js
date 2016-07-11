@@ -2,149 +2,16 @@
 (function() {
   var interval = 3000;
 
-  //emojis I like from https://afeld.github.io/emoji-css/
-  var EMOJIS = [
-    'em---1',
-    'em-100',
-    'em-1234',
-    'em-airplane',
-    'em-anguished',
-    'em-ant',
-    'em-apple',
-    'em-arrow_double_down',
-    'em-arrow_double_up',
-    'em-arrow_forward',
-    'em-arrow_up_small',
-    'em-baby_chick',
-    'em-balloon',
-    'em-ballot_box_with_check',
-    'em-bar_chart',
-    'em-bear',
-    'em-bee',
-    'em-beetle',
-    'em-beginner',
-    'em-bike',
-    'em-bird',
-    'em-black_circle',
-    'em-black_medium_small_square',
-    'em-black_medium_square',
-    'em-black_small_square',
-    'em-black_square',
-    'em-blossom',
-    'em-book',
-    'em-books',
-    'em-bouquet',
-    'em-bug',
-    'em-bulb',
-    'em-bust_in_silhouette',
-    'em-cactus',
-    'em-cat',
-    'em-cat2',
-    'em-cherry_blossom',
-    'em-chestnut',
-    'em-chicken',
-    'em-city_sunrise',
-    'em-city_sunset',
-    'em-cl',
-    'em-cloud',
-    'em-cool',
-    'em-crocodile',
-    'em-diamond_shape_with_a_dot_inside',
-    'em-dizzy',
-    'em-dog',
-    'em-dog2',
-    'em-droplet',
-    'em-earth_americas',
-    'em-earth_asia',
-    'em-earth_africa',
-    'em-egg',
-    'em-eight_pointed_black_star',
-    'em-eight_spoked_asterisk',
-    'em-eyes',
-    'em-fallen_leaf',
-    'em-fire',
-    'em-fireworks',
-    'em-fish',
-    'em-heavy_check_mark',
-    'em-herb',
-    'em-hibiscus',
-    'em-high_brightness',
-    'em-japan',
-    'em-large_blue_circle',
-    'em-large_blue_diamond',
-    'em-large_orange_diamond',
-    'em-leaves',
-    'em-lemon',
-    'em-low_brightness',
-    'em-maple_leaf',
-    'em-milky_way',
-    'em-moon',
-    'em-mushroom',
-    'em-octopus',
-    'em-partly_sunny',
-    'em-pencil2',
-    'em-penguin',
-    'em-pizza',
-    'em-poop',
-    'em-rabbit',
-    'em-ram',
-    'em-red_circle',
-    'em-rocket',
-    'em-rooster',
-    'em-rotating_light',
-    'em-round_pushpin',
-    'em-seedling',
-    'em-small_blue_diamond',
-    'em-small_orange_diamond',
-    'em-small_red_triangle',
-    'em-small_red_triangle_down',
-    'em-snail',
-    'em-snowflake',
-    'em-sparkler',
-    'em-sparkles',
-    'em-speech_balloon',
-    'em-star',
-    'em-star2',
-    'em-stars',
-    'em-strawberry',
-    'em-sunflower',
-    'em-sunny',
-    'em-sunrise',
-    'em-sunrise_over_mountains',
-    'em-sweat_drops',
-    'em-tada',
-    'em-tangerine',
-    'em-tent',
-    'em-tripical_fish',
-    'em-turtle',
-    'em-whale2',
-    'em-white_large_square',
-    'em-tulip',
-    'em-us',
-    'em-whale',
-    'em-zap',
-    'em-tomato',
-    'em-white_circle',
-    'em-white_small_square',
-    'em-white_medium_square',
-    'em-watermelon',
-    'em-white_medium_small_square'
-  ]; */
-
-  //uniform int from [min, max)
+  // uniform int from [min, max)
   var uniform = function(min, max) {
-    return min + Math.floor(Math.random() * (max-min));
+    return min + Math.floor(Math.random() * (max - min));
   };
-
-  var choice = function(arr) {
-    return arr[uniform(0, arr.length)];
-  };
-
+    
   var update = function() {
-    var em = document.getElementById('em-header');
-    var symbol = choice(EMOJIS);
-    console.log(symbol);
-    em.innerHTML = '<a href=\"index.html\"><i class = \"' + symbol + '\"></i></a>';
+    var sym = document.getElementById('symbol');
+    //dingbats are from 0x2700 to 0x27bf
+    var symbol = String.fromCharCode(uniform(0x2700, 0x27c0));
+    sym.innerHTML = symbol;
   };
 
   setInterval(update, interval);
