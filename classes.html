@@ -2,13 +2,16 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="Claire Nord's personal website.">
+  <meta name="author" content="Claire Nord">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <title>Claire Nord - Classes</title>
+  <title>Classes - Claire Nord</title>
 </head>
 <body>
   <div class="container">
@@ -16,73 +19,83 @@
   <div class="header clearfix">
     <nav>
       <ul class="nav nav-pills pull-right">
-          <li role="presentation">
+          <li role="presentation" title="home">
             <a href="index.html">home</a>
           </li>
-          <li role="presentation">
-            <a href="http://clairemnord.tumblr.com">blog</a>
+          <li role="presentation" title="blog">
+            <a href="http://clairemnord.tumblr.com" id="blog"></a>
           </li>
-          <li role="presentation">
+          <li role="presentation" title="classes">
             <a href="classes.html">classes</a>
           </li>
       </ul>
     </nav>
-    <h3 class="text-muted"><a href="index.html">claire</a></h3>
+    <h3 class="text-muted"><a href="index.html"><i class="em em-book" title="home"></i></a></h3>
   </div>
 
   <!--big image -->
   <div class="jumbotron">
     <h1>Classes</h1>
-    <p>--construction in progress--</p>
+    <p>&lsaquo; <span id="construction"></span> &rsaquo;</p>
   </div>
-  <h2>Fall 2016</h2>
-  <ul>
-    <li>6.006: Intro. to Algorithms</li>
-    <li>6.005: Software Construction</li>
-    <li>21G.505: Japanese 5</li>
-    <li>7.012: Intro. Biology</li>
-  </ul>
-  <h2>Spring 2016</h2>
-    <p>Because of prior credit from high school, I was able to declare "sophomore standing" and thus declare my major and take my first in-major classes this semester.</p>
-    <ul>
-      <li><a href="https://www.eecs.mit.edu/academics-admissions/academic-information/subject-updates-st-2016/6s08">6.S08</a>: Interconnected Embedded Systems</li>
-      <li><a href="https://stellar.mit.edu/S/course/6/fa15/6.042/">6.042</a>: Mathematics for Computer Science</li>
-      <li><a href="https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/">18.06</a>: Linear Algebra</li>
-      <li><a href="https://web.mit.edu/21f.504/www/index.html">21G.504</a>: Japanese 4</li>
-  </ul>
 
-<h2>IAP 2016</h2>
-<ul>
-    <li><a href="https://blueprint.hackmit.org/">Blueprint</a>, <a href="https://hackmit.org/">HackMIT</a>'s high school hackathon</li>
-    <li><a href="https://stellar.mit.edu/S/course/6/ia14/6.177/">6.177</a>: Building Programming Experience in Python</li>
-    <li><a href="https://learning-modules.mit.edu/class/index.html?uuid=/course/6/ia16/6.057#info">6.057</a>: Intro to MATLAB</li>
-    <li>MIT Women's Varsity Openweight Crew Florida training (<a href="https://youtu.be/HyT_vWBE-j0">video</a>)</li>
-    <li><a href="https://mitpeerears.org/">Peer Ears</a> training (residence-based mental health advocacy group)</li>
-</ul>  
-
-<h2>Fall 2015</h2>
-<p>My first semester at MIT went well! Thanks to Pass/No Record, I was able to make friends, get involved in groups, and take some cool classes.</p>
-<ul>
-    <li><a href="https://ocw.mit.edu/courses/mathematics/18-02-multivariable-calculus-fall-2007/">18.02</a>: Calculus II</li>
-    <li><a href="https://ocw.mit.edu/courses/physics/8-02-physics-ii-electricity-and-magnetism-spring-2007/">8.02</a>: Physics II</li>
-    <li><a href="https://ocw.mit.edu/courses/physics/8-02-physics-ii-electricity-and-magnetism-spring-2007/">3.091</a>: Intro to Solid-State Chemistry</li>
-    <li><a href="https://ocw.mit.edu/ans7870/21f/21f.027/home/index.html">21G.027</a>: Visualizing Japan in the Modern World</li>
-    <li><a href="https://ocw.mit.edu/courses/engineering-systems-division/esd-051j-engineering-innovation-and-design-fall-2012/">6.A69</a>: Engineering, Innovation, and Design</li>
-</ul>
-
-<!-- Footer -->
-<footer class="footer">
-  <ul>
-    <li><a href="https://www.dropbox.com/s/fpxbc3mmk6doroh/MIT_Claire_Nord_20160622.pdf?dl=0">Resume</a></li>
-    <li><a href="https://github.com/cmnord">GitHub</a></li>
-    <li><a href="https://medium.com/@cnord">Medium</a></li>
-    <li><a href="mailto:cnord@mit.edu">Email</a></li>
-    <li><a href="https://www.linkedin.com/in/claire-nord-66a90ab1">LinkedIn</a></li>
-  </ul>  
-</footer>
+  <div class="row content">
+    <div class="col-lg-6">
+      <h2>Fall 2016</h2>
+        <ul>
+          <li>6.006: Intro. to Algorithms</li>
+          <li>6.005: Software Construction</li>
+          <li>21G.505: Japanese 5</li>
+          <li>7.012: Intro. Biology</li>
+        </ul>
+      <h2>Spring 2016</h2>
+        <p>Because of prior credit from high school, I was able to declare "sophomore standing" and thus declare my major and take my first in-major classes this semester.</p>
+        <ul>
+          <li><a href="https://www.eecs.mit.edu/academics-admissions/academic-information/subject-updates-st-2016/6s08">6.S08</a>: Interconnected Embedded Systems</li>
+          <li><a href="https://stellar.mit.edu/S/course/6/fa15/6.042/">6.042</a>: Mathematics for Computer Science</li>
+          <li><a href="https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/">18.06</a>: Linear Algebra</li>
+          <li><a href="https://web.mit.edu/21f.504/www/index.html">21G.504</a>: Japanese 4</li>
+        </ul>
+      </div>
+    <div class="col-lg-6">
+      <h2>IAP 2016</h2>
+        <ul>
+          <li><a href="https://blueprint.hackmit.org/">Blueprint</a>, <a href="https://hackmit.org/">HackMIT</a>'s high school hackathon</li>
+          <li><a href="https://stellar.mit.edu/S/course/6/ia14/6.177/">6.177</a>: Building Programming Experience in Python</li>
+          <li><a href="https://learning-modules.mit.edu/class/index.html?uuid=/course/6/ia16/6.057#info">6.057</a>: Intro to MATLAB</li>
+          <li>MIT Women's Varsity Openweight Crew Florida training (<a href="https://youtu.be/HyT_vWBE-j0">video</a>)</li>
+          <li><a href="https://mitpeerears.org/">Peer Ears</a> training (residence-based mental health advocacy group)</li>
+        </ul>  
+        <h2>Fall 2015</h2>
+        <p>My first semester at MIT went well! Thanks to Pass/No Record, I was able to make friends, get involved in groups, and take some cool classes.</p>
+        <ul>
+          <li><a href="https://ocw.mit.edu/courses/mathematics/18-02-multivariable-calculus-fall-2007/">18.02</a>: Calculus II</li>
+          <li><a href="https://ocw.mit.edu/courses/physics/8-02-physics-ii-electricity-and-magnetism-spring-2007/">8.02</a>: Physics II</li>
+          <li><a href="https://ocw.mit.edu/courses/physics/8-02-physics-ii-electricity-and-magnetism-spring-2007/">3.091</a>: Intro to Solid-State Chemistry</li>
+          <li><a href="https://ocw.mit.edu/ans7870/21f/21f.027/home/index.html">21G.027</a>: Visualizing Japan in the Modern World</li>
+          <li><a href="https://ocw.mit.edu/courses/engineering-systems-division/esd-051j-engineering-innovation-and-design-fall-2012/">6.A69</a>: Engineering, Innovation, and Design</li>
+        </ul>
+      </div>
+    </div>
   </div>
+
+  <!-- Footer -->
+  <div>
+    <footer class="footer">
+      <ul>
+        <li><a href="https://www.dropbox.com/s/fpxbc3mmk6doroh/MIT_Claire_Nord_20160622.pdf?dl=0">resume</a></li>
+        <li><a href="https://github.com/cmnord">GitHub</a></li>
+        <li><a href="https://medium.com/@cnord">Medium</a></li>
+        <li><a href="mailto:cnord@mit.edu">mail</a></li>
+      </ul>
+    </footer>
+    <p class="text-center"><a href="http://clairenord.me" id="symbol" title="?">?</a></p>
+  </div>
+</div>
+
+<!-- js -->
+<script src="js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script> 
-    
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
