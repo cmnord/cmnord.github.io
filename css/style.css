@@ -3,84 +3,10 @@ body {
   padding-bottom: 20px;
 }
 
-.header, .footer {
-  padding-right: 15px;
-  padding-left: 15px;
+.title {
+  font-size: 50px;
 }
 
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+p {
+  font-size: 26px;
 }
-
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-}
-
-.jumbotron {
-    background-image: url("../img/header.jpg");
-    background-size: cover;
-    text-align: center;
-    color: white !important;
-}
-
-.content {
-  margin: 30px 0;
-  border-top: 1px solid #e5e5e5;
-}
-
-.content p + h4 {
-  margin-top: 28px;
-}
-
-#blog:before {
-  content: 'blog';
-}
-#blog:hover:before {
-  content: '\270E...';
-}
-
-#construction:before {
-  content: 'construction in progress';
-}
-#construction:hover:before {
-  content: '安全第一';
-}
-
-
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-footer li {
-  font-size: 10px;
-  display: inline;
-  margin: 5px;
-}
-
-footer p {
-  font-size: 12px;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
-
