@@ -1,4 +1,5 @@
-# Silly personal website
-Exists at [cnord.me](http://cnord.me).
+# [welcome](http://cnord.me) 
 
-Real personal website at [clairenord.me](http://clairenord.me).
+Insp [code.hackmit.org](https://code.hackmit.org) ([Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.txt))
+
+Copyright (c) Claire Nord 2016 [MIT license](https://opensource.org/licenses/MIT)
