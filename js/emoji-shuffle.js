@@ -17,13 +17,18 @@ $(document).ready(function() {
     emojiArr[i].src = "img/" + EMOJIS[i] + ".png";
   }
 
-  // select a new emoji
+  // select a new emoji, it never repeats
   var newemoji = function() {
-    return emojiArr[Math.floor(Math.random() * EMOJIS.length)].src;
+    var old_emoji = document.images['emoji'].src;
+    var new_emoji = old_emoji;
+    while(new_emoji == old_emoji) {
+      new_emoji = emojiArr[Math.floor(Math.random() * EMOJIS.length)].src;
+    }
+    return new_emoji;
   }
   
   $('#emoji').click( function() {
-      $(this).attr("src", newemoji());
-    });
+    $(this).attr("src", newemoji());
+  });
 
 }());
