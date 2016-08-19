@@ -27,3 +27,10 @@ img {
   width: 60px;
 }
 
+#bear {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
