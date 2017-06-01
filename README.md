@@ -1,4 +1,4 @@
-## [clairenord.me](https://clairenord.me)
+## [clairenord.com](http://clairenord.com)
 
 My personal website! :smiley:
 

@@ -15,7 +15,7 @@ title: Claire Nord
 description: > # this means to ignore newlines until "baseurl:"
   Claire Nord's personal website.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://clairenord.me" # the base hostname & protocol for your site
+url: "http://clairenord.com" # the base hostname & protocol for your site
 analytics: UA-83054268-1 # tracking ID
 
 links:
