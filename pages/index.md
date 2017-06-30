@@ -9,7 +9,7 @@ MIT junior studying computer science.
 Right now I'm:
 
 - Reading [Surely You're Joking, Mr. Feynman!][feynman] :closed_book:
-- Planning [HackMIT][hack] 2017 :large_blue_circle::bulb::red_circle:
+- Planning [HackMIT][hack] 2017 :space_invader:
 - Working at the Microsoft [Garage][garage] :office:
 
 :mailbox_with_mail: cnord@mit.edu
