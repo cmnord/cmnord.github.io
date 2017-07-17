@@ -8,9 +8,9 @@ MIT junior studying computer science.
 
 Right now I'm:
 
-- Reading [Surely You're Joking, Mr. Feynman!][feynman] :closed_book:
 - Planning [HackMIT][hack] 2017 :space_invader:
 - Working at the Microsoft [Garage][garage] :office:
+- Re-watching *Avatar: The Last Airbender* :ocean::fire::sunrise_over_mountains::dash: 
 
 :mailbox_with_mail: cnord@mit.edu
 
