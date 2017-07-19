@@ -1,17 +1,26 @@
+:root {
+  --dark-color: #2f2f2f;
+  --light-color: #eee;
+  --link-light-color: #28afb0;
+  --link-dark-color: #19647e;
+}
+
 body {
-  font-size: 1em;
+  font-size: 1.05em;
   max-width: 45em;
   margin: auto;
   padding: 0 2em;
   font-family: sans-serif;
-}
-
-h1 {
-  font-weight: normal;
+  background: var(--light-color);
+  color: var(--dark-color);
 }
 
 a {
-  color: #2A5DB0;
+  color: var(--link-light-color);
+}
+
+a:hover, a:visited {
+  color: var(--link-dark-color);
 }
 
 nav a, h1 a, footer a {
@@ -26,8 +35,8 @@ nav a:first-child {
   padding-left: 0;
 }
 
-a:hover, a:visited {
-  color: #300EB7;
+h1 {
+  font-weight: normal;
 }
 
 /* Footer is small and right-aligned. */

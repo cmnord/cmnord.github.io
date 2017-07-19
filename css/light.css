@@ -1,7 +1,9 @@
-a {
-  color: #2a5db0;
+:root {
+  --dark-color: #2f2f2f;
+  --light-color: #eee;
 }
 
-a:hover, a:visited {
-  color: #300eb7;
+body {
+  background: var(--light-color);
+  color: var(--dark-color);
 }

@@ -1,14 +1,9 @@
-/* Colors based on https://github.com/ChrisKempson/Tomorrow-Theme */
+:root {
+  --dark-color: #2f2f2f;
+  --light-color: #eee;
+}
 
 body {
-  background: #1d1f21;
-  color: #c5c8c6;
-}
-
-a {
-  color: #8abeb7;
-}
-
-a:hover, a:visited {
-  color: #b294bb;
+  background: var(--dark-color);
+  color: var(--light-color);
 }
