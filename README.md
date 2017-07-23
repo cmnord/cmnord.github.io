@@ -12,6 +12,11 @@ Tumblr theme based on [arturkim][ak]'s [Minimal Theme][theme].
 - `bundle install`
 - `bundle exec jekyll serve`
 
+# License
+
+[MIT][mitlicense]
+
+[mitlicense]: http://clairenord.com/mitlicense
 [mfsite]: http://motherfuckingwebsite.com/
 [bettermfsite]: http://bettermotherfuckingwebsite.com/
 [ak]: http://arturkim.com
