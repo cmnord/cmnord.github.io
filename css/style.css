@@ -1,8 +1,8 @@
 :root {
   --dark-color: #2f2f2f;
-  --light-color: #eee;
-  --link-light-color: #28afb0;
-  --link-dark-color: #19647e;
+  --light-color: #f9f9f9;
+  --link-light-color: #4285f4;
+  --link-dark-color: #265C8E;
 }
 
 body {
@@ -45,10 +45,4 @@ footer ul {
   font-size: smaller;
   text-align:right;
   list-style: none;
-}
-
-footer div {
-  float: left;
-  font-size: smaller;
-  text-align: left;
 }

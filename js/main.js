@@ -18,12 +18,5 @@ $(document).ready(function() {
   };
 
   setInterval(update, interval);
-  
-  //navbar arrow
-  $('#arrow').click( function(){
-    $(this).find('span').toggleClass('glyphicon-menu-left').toggleClass('glyphicon-menu-down');
-  });
 
 }());
-
-

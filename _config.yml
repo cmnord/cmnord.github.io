@@ -1,16 +1,9 @@
-# config file for settings that affect the whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: Claire Nord
 description: > # this means to ignore newlines until "baseurl:"
   Claire Nord's personal website.
@@ -19,9 +12,10 @@ url: "http://clairenord.com" # the base hostname & protocol for your site
 analytics: UA-83054268-1 # tracking ID
 
 links:
-  github:  cmnord
-  medium: cnord
-  linkedin: cmnord
+  GitHub:  https://github.com/cmnord
+  Tumblr: http://blog.clairenord.com
+  Medium: http://medium.com/@cnord
+  LinkedIn: http://linkedin.com/in/cmnord
 
 # Can't allow custom plugins on gh-pages (jekyll-pageless-redirects)
 # safe: false
