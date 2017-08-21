@@ -1,0 +1,19 @@
+title:  Claire Nord
+tagline:  MIT EECS 2019
+author:
+  name: 'Claire Nord'
+
+google-ID: 'UA-83054268-1'
+
+menu:
+- {name: 'Home', url: '/'}
+- {name: 'Classes', url: '/classes'}
+
+social:
+- {icon: 'github', link: 'https://www.github.com/cmnord'}
+- {icon: 'tumblr', link: 'https://blog.clairenord.com'}
+- {icon: 'medium', link: 'https://medium.com/@cnord'}
+- {icon: 'linkedin', link: 'http://www.linkedin.com/in/cmnord/'}
+- {icon: 'envelope', link: 'mailto:cnord@mit.edu'}
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
