@@ -1,5 +1,5 @@
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://clairenord.com" # the base hostname & protocol for your site
+url: "https://clairenord.com" # the base hostname & protocol for your site
 
 # Can't allow custom plugins on gh-pages (jekyll-pageless-redirects)
 # safe: false
