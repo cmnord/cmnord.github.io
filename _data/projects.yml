@@ -1,0 +1,63 @@
+-
+    title: Sequence
+    github: cmnord/sequence
+    info: >
+        Generates playlists where each song
+        has an artist in common with the previous song.
+        <br/><em><i class="fa fa-flask"></i> Flask</em>
+-
+    title: Hackbot Sponsor
+    img: /assets/img/sponsor.png
+    github: techx/hackmit-hackbot
+    date: Summer 2017
+    info: >
+        Hackbot does a lot of things for
+        <a href="https://hackmit.org">HackMIT</a>,
+        but this summer I updated the `hackbot 
+        sponsor` command to pull from
+        <a href="https://www.streak.com/">Streak</a>,
+        our CRM tool.
+        <br/><em>:coffee: CoffeeScript</em>
+-
+    title: Drops
+    github: liliapoteat/drops
+    img: /assets/img/drops.png
+    website: http://drops.website
+    date: Summer 2017
+    info: >
+        A <a href="https://en.wikipedia.org/wiki/Scoops_%E2%80%94_Ice_Cream_Fun_for_Everyone">Scoops</a>-style
+        game to raise awareness about
+        the disparities in access to clean drinking water
+        within the United States. In this game you visit
+        three cities with different water quality issues
+        and management, and try to catch as much clean water
+        as you can in your bucket.
+        <em>
+        <br/>:space_invader: Javascript, Phaser.IO
+        <br/>:trophy: 1st Place, Best User Experience @
+        <a href="http://bytehacks.org">ByteHacks</a>
+        </em>
+-
+    title: clairenord.com
+    website: https://clairenord.com
+    img: /assets/img/website.png
+    github: cmnord/cmnord.github.io
+    date: Summer 2017
+    info: >
+        This site!! I :heart: Jekyll
+        <br/><em>:tophat: Jekyll</em>
+-
+    title: claire.run
+    img: /assets/img/redisred.png
+    website: http://claire.run/admin
+    github: detry322/redisred
+    date: Summer 2017
+    info: >
+        Personal links using
+        <a href="https://github.com/detry322/redisred">redisred</a>!
+        I have a bunch of cool links like
+        <a href="http://claire.run/books">claire.run/books</a>
+        and
+        <a href="http://claire.run/blog">claire.run/blog</a>.
+        I just set up DNS and clicked "Deploy to Heroku",
+        but I'm still happy I set this up.
