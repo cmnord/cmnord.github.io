@@ -4,7 +4,7 @@ title: Claire Nord
 permalink: /
 ---
 
-Right now I'm:
+## Hi！ Right now I'm:
 
 - Planning [HackMIT][hack] 2017 :space_invader:
 - Working at the Microsoft [Garage][garage] :office:
