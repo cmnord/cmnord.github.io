@@ -1,27 +1,13 @@
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-title: Claire Nord
-description: > # this means to ignore newlines until "baseurl:"
-  Claire Nord's personal website.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://clairenord.com" # the base hostname & protocol for your site
-analytics: UA-83054268-1 # tracking ID
-
-links:
-  GitHub:  https://github.com/cmnord
-  Tumblr: http://blog.clairenord.com
-  Medium: http://medium.com/@cnord
-  LinkedIn: http://linkedin.com/in/cmnord
+url: "https://clairenord.com" # the base hostname & protocol for your site
 
 # Can't allow custom plugins on gh-pages (jekyll-pageless-redirects)
 # safe: false
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+permalink: none
 gems:
   - jemoji
   - github-pages
