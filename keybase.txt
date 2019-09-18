@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/cmnord
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://clairenord.com
+  * I am cmnord (https://keybase.io/cmnord) on keybase.
+  * I have a public key ASDoQv8j9asLAKXPA_4wFUdcgPnQdu4cj_MGH0TFiJRA5Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120e842ff23f5ab0b00a5cf03fe3015475c80f9d076ee1c8ff3061f44c5889440e50a",
+      "host": "keybase.io",
+      "kid": "0120e842ff23f5ab0b00a5cf03fe3015475c80f9d076ee1c8ff3061f44c5889440e50a",
+      "uid": "20d3b4a7c8e0a250ba9207a862650b19",
+      "username": "cmnord"
+    },
+    "merkle_root": {
+      "ctime": 1568774195,
+      "hash": "4d7532a2df77e34b0954cc921bf16cf33a6a4ff7a77fc680731740da59420d2d01bb935546afbd5500c9a9555a94be06d9033184da16d44ba4aa775a7155f7b9",
+      "hash_meta": "ac6469eb3d38a6b233ad110016b753f8e9e20d5072084fb13b00c861782418be",
+      "seqno": 7542482
+    },
+    "service": {
+      "entropy": "afj2ndhZfwLRPJHGg+WLyVlQ",
+      "hostname": "clairenord.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.4.2"
+  },
+  "ctime": 1568774207,
+  "expire_in": 504576000,
+  "prev": "fe10a24453df4fab996eaa60f684751f4f5665e8f2d014df0bc68a434a58e6b5",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg6EL/I/WrCwClzwP+MBVHXID50HbuHI/zBh9ExYiUQOUKp3BheWxvYWTESpcCBcQg/hCiRFPfT6uZbqpg9oR1H09WZejy0BTfC8aKQ0pY5rXEIG40CwfHbWqyGMJVtpqGxQzcp6q35gXDj0oHgnalMW2uAgHCo3NpZ8RA55/479V70cWydH7+DnwTy8CmGDYZ9u15YFWIhKdWsXKR2s3XPH35QEgrvrFntOlwezerX9W0Yatw7ZnKzYpWCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPhdYqyKaYceX68UpDPJ5RbaXqXDoV+r+s32K7S8C7Z6o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cmnord
+
+==================================================================
