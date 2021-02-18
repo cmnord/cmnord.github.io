@@ -1,25 +1,38 @@
 ---
 layout: page
-permalink: /writing
-title: Writing
+permalink: /blog
+title: Blog
 ---
+
 <ul class="posts">
   {% for post in site.posts %}
 
-    {% unless post.next %}
-      <h3>{{ post.date | date: '%Y' }}</h3>
-    {% else %}
-      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
-        <h3>{{ post.date | date: '%Y' }}</h3>
-      {% endif %}
-    {% endunless %}
+  {% unless post.next %}
+  <h3>{{ post.date | date: '%Y' }}</h3>
+  {% else %}
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+  {% if year != nyear %}
+  <h3>{{ post.date | date: '%Y' }}</h3>
+  {% endif %}
+  {% endunless %}
 
-    <li itemscope>
+  <li itemscope>
+    <h1>
       <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
-      <p class="post-date"><span><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%B %-d" }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</span></p>
-    </li>
+    </h1>
+    {% if post.image %}
+    <div class="thumbnail-container">
+      <a href="{{ site.github.url }}{{ post.url }}"><img src=" {{ site.github.url}}/assets/img/{{ post.image }}"></a>
+    </div>
+    {% endif %}
+    <p class="post-date"><span><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%B %-d" }} - <i
+          class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</span></p>
+  </li>
 
   {% endfor %}
 </ul>
+
+<p>
+  :information_source: For a few more posts, see my <a href="https://medium.com/@cnord">Medium account.</a>
+</p>
