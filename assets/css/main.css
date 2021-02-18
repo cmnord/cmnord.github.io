@@ -24,16 +24,6 @@ body {
   line-height: 1.75rem;
 }
 
-@media (max-width: 30em) {
-  body {
-    font-size: 14px;
-    line-height: 1.5rem;
-  }
-  body h1 {
-    font-size: 1.5rem;
-  }
-}
-
 h1{
   font-size: 2rem;
 }
@@ -504,4 +494,41 @@ th, td {
 
 .fa-rss-square:hover {
 	color: #ff6600;
+}
+
+.fa-book {
+  padding: 5px;
+  -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+.fa-book:hover {
+  /* https://brandcolors.net/b/goodreads */
+  color: #553b08;
+}
+
+.fa-podcast {
+  padding: 5px;
+  -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+.fa-podcast:hover {
+  /* https://www.schemecolor.com/apple-podcasts-app-icon-2017-colors.php */
+  color: #872EC4;
+}
+
+.class-number {
+  /* undo italics */
+  font-style: normal;
+  float: right;
+  color: #9a9a9a;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 0.8rem;
 }
