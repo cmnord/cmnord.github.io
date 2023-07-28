@@ -49,6 +49,7 @@ before it happened.
 - [Arch Bar Removal](#arch-bar-removal)
 - [Weeks 7+](#weeks-7)
 - [Why did I fall?](#why-did-i-fall)
+{: .table-of-contents}
 
 ### The Hospital
 
