@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 /*
   Site container
 */
@@ -32,7 +34,7 @@
 }
 
 .header a:hover {
-  color:black;
+  color: black;
 }
 
 .header-title a {
@@ -78,6 +80,7 @@
     float: left;
     padding-top: 0px;
   }
+
   .menu-content {
     margin-bottom: 5px;
   }
@@ -105,9 +108,9 @@
 
 .footer-description {
   display: block;
-  margin-top:3px;
+  margin-top: 3px;
   margin-bottom: 1rem;
   color: $light-gray-color;
   font-family: $sans-serif-font-family;
-  font-size:0.8rem;
+  font-size: 0.8rem;
 }

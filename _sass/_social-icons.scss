@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 /*
   Social media icons
 */
@@ -6,13 +8,14 @@
   padding-right: 10px;
 }
 
-@mixin social-media-icon($color, $transition){
+@mixin social-media-icon($color, $transition) {
   -webkit-transition: $transition;
   -o-transition: $transition;
   -ms-transition: $transition;
   -moz-transition: $transition;
   transition: $transition;
-  &:hover{
+
+  &:hover {
     color: $color;
   }
 }
