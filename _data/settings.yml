@@ -13,14 +13,14 @@ menu:
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
-  - { icon: "envelope", link: "mailto:cnord19@gmail.com" }
-  - { icon: "github", link: "https://github.com/cmnord" }
+  - { icon: "envelope", type: "solid", link: "mailto:cnord19@gmail.com" }
+  - { icon: "github", type: "brands", link: "https://github.com/cmnord" }
   - {
       icon: "book",
+      type: "solid",
       link: "https://www.goodreads.com/user/show/15765249-claire",
     }
-  - { icon: "podcast", link: "https://goodpods.com/profile/cnord-49473" }
-  - { icon: "linkedin", link: "https://linkedin.com/in/cmnord" }
+  - { icon: "linkedin", type: "brands", link: "https://linkedin.com/in/cmnord" }
 
 # Customize site text
 pagination:
