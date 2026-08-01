@@ -7,16 +7,19 @@
 
 ## Setup
 
-- Install [Ruby][ruby]
-- Install [bundler][bundler]
-- Install [Jekyll][jekyll]
-- Install [nokogiri][nokogiri]
-- Clone the repo, `cd` into repo
-- `bundle install`
+1. Install the [Ruby][ruby] version in `.ruby-version`.
+2. Install [Bundler][bundler].
+3. Run `bundle install`.
 
 ## Development
 
-- `jekyll serve --livereload`
+Run `bundle exec jekyll serve --livereload` and open <http://localhost:4000>.
+
+To verify a production build, run:
+
+```sh
+JEKYLL_ENV=production bundle exec jekyll build --strict_front_matter
+```
 
 ## License
 
@@ -28,7 +31,5 @@ Open sourced under the [MIT license][license].
 [bettermfsite]: http://bettermotherfuckingwebsite.com/
 [m2j]: https://github.com/Donohue/medium-to-jekyll
 [ruby]: https://www.ruby-lang.org/en/documentation/installation/
-[bundler]: http://bundler.io/
-[jekyll]: https://jekyllrb.com/
-[nokogiri]: http://www.nokogiri.org/tutorials/installing_nokogiri.html
+[bundler]: https://bundler.io/
 [license]: https://github.com/cmnord/cmnord.github.io/blob/main/LICENSE.md
