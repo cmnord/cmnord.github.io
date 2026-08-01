@@ -10,6 +10,7 @@ plugins:             [jekyll-sitemap, jekyll-feed, jekyll-seo-tag, jemoji]
 title:		           'Claire Nord'
 description:	       ''
 author:              'Claire Nord'
+url:                 'https://clairenord.com'
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:

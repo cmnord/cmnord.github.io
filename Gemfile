@@ -2,8 +2,5 @@ source "https://rubygems.org"
 gemspec
 
 group :jekyll_plugins do
-    gem "jemoji"
+  gem "jemoji", "~> 0.13"
 end
-
-# https://github.com/jekyll/jekyll/issues/8523
-gem "webrick", "~> 1.7"
