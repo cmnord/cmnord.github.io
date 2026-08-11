@@ -1,10 +1,10 @@
 <div class="menu">
-  <nav class="menu-content">
+  <nav class="menu-content" aria-label="Primary navigation">
     {% for item in site.data.settings.menu %}
       <a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a>
     {% endfor %}
   </nav>
-  <nav class="social-icons">
+  <nav class="social-icons" aria-label="Social links">
     {% include social-icons.html %}
   </nav>
 </div>

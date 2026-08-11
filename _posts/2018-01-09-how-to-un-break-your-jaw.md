@@ -2,8 +2,10 @@
 layout: post
 title: "How to Un-Break Your Jaw"
 date: 2018-01-09
-image: jaw/1.jpeg
-image_alt: "A panoramic dental X-ray showing a repaired lower jaw with a metal plate and wired braces"
+description: "What recovery from a broken jaw—and one 10 cm plate and seven screws—was actually like."
+image:
+  path: /assets/img/jaw/1.jpeg
+  alt: "A panoramic dental X-ray showing a repaired lower jaw with a metal plate and wired braces"
 tags: [health, bones, injury, broken jaw, writing]
 ---
 
