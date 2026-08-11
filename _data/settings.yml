@@ -15,11 +15,7 @@ menu:
 social:
   - { icon: "envelope", type: "solid", link: "mailto:cnord19@gmail.com" }
   - { icon: "github", type: "brands", link: "https://github.com/cmnord" }
-  - {
-      icon: "book",
-      type: "solid",
-      link: "https://www.goodreads.com/user/show/15765249-claire",
-    }
+  - { icon: "book", type: "solid", link: "https://www.goodreads.com/user/show/15765249-claire" }
   - { icon: "linkedin", type: "brands", link: "https://linkedin.com/in/cmnord" }
 
 # Customize site text
