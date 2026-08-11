@@ -5,13 +5,20 @@
 */
 
 .posts-container {
-  margin-bottom: 5rem;
+  margin-bottom: 64px;
   padding: 0px;
   list-style: none;
 }
 
+.posts-container h1 {
+  margin: 0 0 16px;
+  font-size: 26px;
+  line-height: 30px;
+}
+
 .posts-container h1 a {
   color: inherit;
+  text-decoration: none;
 }
 
 .posts-container h1 a:hover,
@@ -28,8 +35,7 @@
 .thumbnail-container {
   max-width: 100%;
   overflow: hidden;
-  border-radius: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .thumbnail-container img {
@@ -58,8 +64,8 @@
   border: 1px solid $pagination-button-color;
   padding: 15px 45px;
   display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .pagination-active:hover {

@@ -6,55 +6,106 @@
 
 .post-date {
   display: block;
-  margin-top: 3px;
-  margin-bottom: 1rem;
+  margin-top: 8px;
+  margin-bottom: 16px;
   color: $light-gray-color;
   font-family: $sans-serif-font-family;
-  font-size: 0.8rem;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 20px;
 }
 
-@media (max-width: $elements-responsive-width) {
-  .posts h1 {
-    font-size: 1.5rem;
-  }
+.post-title,
+.page-title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.post-content {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  overflow-wrap: anywhere;
+}
+
+.post-header-divider {
+  margin: 32px 0;
+}
+
+.post-content > :first-child {
+  margin-top: 0;
+}
+
+.post-content > :last-child {
+  margin-bottom: 0;
 }
 
 .related {
-  padding-bottom: 2rem;
+  padding: 32px 0 2rem;
+}
+
+.related-title {
+  margin: 0 0 12px;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .related-posts {
-  padding-left: 0px;
+  margin: 0;
+  padding-left: 0;
   list-style: none;
 }
 
+.related-posts li {
+  margin: 0;
+  padding: 6px 0;
+}
+
 .related-posts a {
-  text-decoration: none;
+  display: inline;
+  font-family: $serif-font-family;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.12em;
+}
+
+.related-posts a:hover,
+.related-posts a:focus-visible {
+  text-decoration: underline;
 }
 
 .caption {
-  text-align: center;
-  font-size: 16px;
-  margin-top: 0px;
+  margin-top: 8px;
 }
 
 @media (max-width: $elements-responsive-width) {
-  .caption {
-    font-size: 14px;
-  }
-
   .table-of-contents {
     font-size: 14px;
   }
 }
 
 .table-of-contents {
-  font-size: 16px;
+  margin: 20px 0;
+  padding: 16px 20px;
+  border: 1px solid $extra-light-gray-color;
+  border-radius: 6px;
+  font-family: $sans-serif-font-family;
+  font-size: 15px;
+  line-height: 1.5;
   list-style-type: none;
-  padding-left: 15px;
 
   ul {
+    margin-bottom: 0;
     list-style-type: none;
+  }
+
+  li {
+    margin-left: 0;
+    padding-left: 0;
   }
 }
 
@@ -65,6 +116,6 @@
   transition: background 20ms ease-in 0s;
 
   &:hover {
-    background-color: $pagination-button-color;
+    background-color: $code-background-color;
   }
 }

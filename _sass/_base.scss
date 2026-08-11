@@ -4,32 +4,42 @@
   Base
 */
 
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: $serif-font-family;
-  font-size: 18px;
+  min-height: 100%;
+  margin: 0;
+  background: #fff;
   color: $body-color;
-  line-height: 1.75rem;
+  font-family: $serif-font-family;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.6;
+  font-kerning: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
-@media (max-width: $elements-responsive-width) {
-  body {
-    font-size: 14px;
-    line-height: 1.5rem;
-  }
-
-  body h1 {
-    font-size: 1.5rem;
-  }
+button,
+input,
+select,
+textarea {
+  font: inherit;
 }
 
-h1 {
-  font-size: 2rem;
-}
-
-h1 a,
-h2 a,
-h3 a {
-  text-decoration: none;
+p {
+  margin: 0 0 20px;
 }
 
 h1,
@@ -38,26 +48,154 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $sans-serif-font-family;
+  margin: 1em 0 0.625em;
   color: $dark-gray-color;
+  font-family: $sans-serif-font-family;
+  font-weight: 700;
+  line-height: 1.16;
+  overflow-wrap: anywhere;
 }
 
-img {
+h1 { font-size: 2em; }
+h2 { font-size: 1.625em; }
+h3 { font-size: 1.375em; }
+h4 { font-size: 1.125em; }
+h5 { font-size: 0.83em; }
+h6 { font-size: 0.67em; }
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.12em;
+}
+
+a:active {
+  opacity: 0.6;
+}
+
+:focus-visible {
+  outline: 2px solid $substack-orange;
+  outline-offset: 3px;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+small {
+  font-size: 0.8em;
+}
+
+sub,
+sup {
+  font-size: 0.75em;
+  line-height: 0;
+}
+
+mark {
+  background: #fff59d;
+  color: inherit;
+}
+
+abbr[title] {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.12em;
+}
+
+img,
+svg,
+video,
+iframe {
   max-width: 100%;
+}
+
+img,
+video {
+  display: block;
   height: auto;
-  border-radius: 5px;
+}
+
+figure {
+  margin: 32px 0;
+}
+
+figcaption,
+.caption {
+  margin-top: 8px;
+  color: $light-gray-color;
+  font-family: $sans-serif-font-family;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
 }
 
 blockquote {
-  margin: 10px 20px 10px;
-  padding: 0px 15px;
-  border-left: 0.25em solid $extra-light-gray-color;
-  color: $light-gray-color;
-  line-height: 1.5;
+  margin: 20px 0;
+  padding: 0 0 0 20px;
+  border-left: 4px solid $substack-orange;
+  color: inherit;
+}
+
+blockquote > :last-child {
+  margin-bottom: 0;
 }
 
 hr {
-  border-top: 1px solid $extra-light-gray-color;
+  height: 1px;
+  margin: 32px 0;
+  padding: 0;
+  border: 0;
+  background: $extra-light-gray-color;
+}
+
+ul,
+ol {
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0 0 32px;
+  padding-left: 4px;
+}
+
+li > p {
+  margin-bottom: 0;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
+
+dl {
+  margin: 0 0 20px;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 0 12px 32px;
+}
+
+details {
+  margin: 20px 0;
+  padding: 16px 20px;
+  border: 1px solid $extra-light-gray-color;
+  border-radius: 6px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+details[open] summary {
+  margin-bottom: 12px;
 }
 
 /*
@@ -66,18 +204,55 @@ hr {
 
 table {
   border-collapse: collapse;
-  margin-bottom: 30px;
+  display: block;
+  margin: 0 0 20px;
+  overflow-x: auto;
   width: 100%;
-}
-
-table,
-th,
-td {
-  border: 1px solid black;
+  font-family: $sans-serif-font-family;
+  font-size: 15px;
+  line-height: 1.45;
 }
 
 th,
 td {
-  padding: 15px;
+  border-bottom: 1px solid $extra-light-gray-color;
+}
+
+th,
+td {
+  padding: 12px 16px;
   text-align: left;
+  vertical-align: top;
+}
+
+th {
+  border-bottom-color: $dark-gray-color;
+  font-weight: 700;
+}
+
+kbd {
+  padding: 0.1em 0.35em;
+  border: 1px solid $extra-light-gray-color;
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  background: $code-background-color;
+  font-family: $code-font-family;
+  font-size: 0.75em;
+}
+
+@media (max-width: $container-responsive-width) {
+  body {
+    font-size: 17px;
+  }
+}
+
+@media print {
+  body {
+    color: #000;
+    font-size: 12pt;
+  }
+
+  a {
+    text-decoration: underline;
+  }
 }
