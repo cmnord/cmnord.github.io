@@ -4,8 +4,22 @@
   Social media icons
 */
 
-.sharing-icons a {
-  padding-right: 10px;
+.sharing-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.sharing-icons a,
+.sharing-icons button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: $light-gray-color;
+  font-size: inherit;
+}
+
+.sharing-icons i {
+  padding: 5px;
 }
 
 @mixin social-media-icon($color, $transition) {
@@ -25,9 +39,9 @@
   @include social-media-icon($envelope-color, $icon-transition-time);
 }
 
-.fa-twitter {
+.fa-bluesky {
   padding: 5px;
-  @include social-media-icon($twitter-color, $icon-transition-time);
+  @include social-media-icon($bluesky-color, $icon-transition-time);
 }
 
 .fa-instagram {
@@ -45,9 +59,9 @@
   @include social-media-icon($linkedin-color, $icon-transition-time);
 }
 
-.fa-facebook {
+.fa-x-twitter {
   padding: 5px;
-  @include social-media-icon($facebook-color, $icon-transition-time);
+  @include social-media-icon($x-color, $icon-transition-time);
 }
 
 .fa-pinterest {
