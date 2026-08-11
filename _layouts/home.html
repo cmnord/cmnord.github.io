@@ -9,7 +9,7 @@ layout: default
     </h1>
     {% if post.image %}
       <div class="thumbnail-container">
-        <a href="{{ site.github.url }}{{ post.url }}"><img src="{{ site.github.url }}/assets/img/{{ post.image }}" alt="{{ post.image_alt | default: post.title | escape }}"></a>
+        <a href="{{ site.github.url }}{{ post.url }}">{% include post-image.html post=post %}</a>
       </div>
     {% endif %}
     <p>

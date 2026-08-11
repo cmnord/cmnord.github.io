@@ -2,8 +2,9 @@
 layout:	post
 title:	"Get to know HKN: Tutoring"
 date:	2018-01-02
-image: tutor.jpeg
-image_alt: "Two students working together at laptops during an HKN tutoring session"
+image:
+  path: /assets/img/tutor.jpeg
+  alt: "Two students working together at laptops during an HKN tutoring session"
 tags: [education, mit, tutoring, writing]
 ---
 
@@ -40,5 +41,5 @@ If you want announcements for HKN events, add yourself to hkn-interest@ [here](h
 
 _Thanks to Nalini Singh and Noah Moroze for feedback. This blog post was cross-posted on Medium [here][medium]._
 
-[registrar]: [MIT Registrar’s Office Enrollment Statistics,](http://web.mit.edu/registrar/stats/majors/index.html) Fall 2017–2018
+[registrar]: http://web.mit.edu/registrar/stats/majors/index.html "MIT Registrar’s Office Enrollment Statistics, Fall 2017–2018"
 [medium]: https://medium.com/mit-hkn/get-to-know-hkn-tutoring-b07267128c93

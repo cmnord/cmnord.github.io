@@ -4,11 +4,21 @@
 markdown: kramdown
 highlighter: rouge
 permalink: none
-plugins: [jekyll-sitemap, jekyll-feed, jekyll-seo-tag, jemoji]
+plugins:
+  # Generates a sitemap for search engines.
+  - jekyll-sitemap
+  # Generates the site's Atom feed.
+  - jekyll-feed
+  # Adds SEO metadata to each page.
+  - jekyll-seo-tag
+  # Opens external links in a new tab.
+  - jekyll-target-blank
+  # Converts emoji shortcodes into emoji images.
+  - jemoji
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title: "Claire Nord"
-description: ""
+description: "Claire's personal website"
 author: "Claire Nord"
 url: "https://clairenord.com"
 

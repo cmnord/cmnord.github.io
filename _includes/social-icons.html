@@ -4,7 +4,7 @@
 <a href="{{ site.baseurl }}{{ item.link }}"><i class="fa-{{ item.type | default: 'solid' }} fa-{{ item.icon }}"
     aria-hidden="true"></i></a>
 {% else %}
-<a href="{{ item.link }}" target="_blank"><i class="fa-{{ item.type | default: 'solid' }} fa-{{ item.icon }}"
+<a href="{{ item.link }}"><i class="fa-{{ item.type | default: 'solid' }} fa-{{ item.icon }}"
     aria-hidden="true"></i></a>
 {% endif %}
 {% endfor %}

@@ -2,8 +2,9 @@
 layout:	post
 title:	"The Five Types of Sports"
 date:	2022-03-25
-image: sports.png
-image_alt: "A binder page filled with colorful Saweetie-themed sports trading cards"
+image:
+  path: /assets/img/sports.png
+  alt: "A binder page filled with colorful Saweetie-themed sports trading cards"
 tags: [sports, fun, essay, writing]
 ---
 
