@@ -23,7 +23,7 @@ layout: default
     </h1>
     {% if post.image %}
     <div class="thumbnail-container">
-      <a href="{{ site.github.url }}{{ post.url }}"><img src=" {{ site.github.url}}/assets/img/{{ post.image }}"></a>
+      <a href="{{ site.github.url }}{{ post.url }}"><img src="{{ site.github.url }}/assets/img/{{ post.image }}" alt="{{ post.image_alt | default: post.title | escape }}"></a>
     </div>
     {% endif %}
     <p class="post-date"><span><i class="fa-solid fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%B %-d" }} - <i
