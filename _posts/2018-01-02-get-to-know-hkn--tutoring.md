@@ -2,6 +2,7 @@
 layout:	post
 title:	"Get to know HKN: Tutoring"
 date:	2018-01-02
+description: "How MIT HKN's tutoring program matches students with peers for individualized academic support."
 image:
   path: /assets/img/tutor.jpeg
   alt: "Two students working together at laptops during an HKN tutoring session"

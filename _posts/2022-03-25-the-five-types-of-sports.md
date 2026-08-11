@@ -2,6 +2,7 @@
 layout:	post
 title:	"The Five Types of Sports"
 date:	2022-03-25
+description: "A taxonomy of sports based on the rules, constraints, and strategies they share."
 image:
   path: /assets/img/sports.png
   alt: "A binder page filled with colorful Saweetie-themed sports trading cards"

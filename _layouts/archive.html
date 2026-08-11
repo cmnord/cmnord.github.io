@@ -2,32 +2,36 @@
 layout: default
 ---
 
-<h1>
+<h1 class="page-title">
   {{ page.title }}
 </h1>
 
-<ul class="posts-container">
+{% assign current_year = site.time | date: "%Y" %}
+<ol class="posts-container">
   {% for post in site.posts %}
-  {% unless post.next %}
-  <h3>{{ post.date | date: '%Y' }}</h3>
-  {% else %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-  {% if year != nyear %}
-  <h3>{{ post.date | date: '%Y' }}</h3>
-  {% endif %}
-  {% endunless %}
-  <li itemscope>
-    <h1>
-      <a href="{{ site.github.url }}{{ post.url }}">{% include post-title.html post=post %}</a>
-    </h1>
+  {% assign post_year = post.date | date: "%Y" %}
+  <li class="post-list-item">
+    <div class="post-list-content">
+      <h2 class="post-list-title">
+        <a href="{{ site.github.url }}{{ post.url }}">{% include post-title.html post=post %}</a>
+      </h2>
+      {% assign teaser = post.description | default: post.excerpt %}
+      <p class="post-list-description">
+        <a href="{{ site.github.url }}{{ post.url }}">{{ teaser | strip_html | strip_newlines | truncate: 180 }}</a>
+      </p>
+      <p class="post-list-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%b %-d" }}{% if post_year != current_year %}, {{ post_year }}{% endif %}
+        </time>
+        <span aria-hidden="true">&bull;</span>
+        <span>{% include read-time.html %}</span>
+      </p>
+    </div>
     {% if post.image %}
-    <div class="thumbnail-container">
+    <div class="post-list-thumbnail">
       <a href="{{ site.github.url }}{{ post.url }}">{% include post-image.html post=post %}</a>
     </div>
     {% endif %}
-    <p class="post-date"><span><i class="fa-solid fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%B %-d" }} - <i
-          class="fa-solid fa-clock" aria-hidden="true"></i> {% include read-time.html %}</span></p>
   </li>
   {% endfor %}
-</ul>
+</ol>

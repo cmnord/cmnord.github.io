@@ -2,6 +2,7 @@
 layout:	post
 title:	"Tech Deep-Dive: Object Detection Ensembles as Graph Cliques"
 date:	2019-03-14
+description: "How graph cliques can combine object-detection models into more reliable ensemble predictions."
 image:
   path: /assets/img/obj/cat-dog.jpeg
   alt: "A sleeping dog and a cat with object-detection boxes labeled DOG 80% and CAT 95%"

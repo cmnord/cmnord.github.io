@@ -5,44 +5,104 @@
 */
 
 .posts-container {
-  margin-bottom: 64px;
-  padding: 0px;
+  margin: 0 0 64px;
+  padding: 0;
   list-style: none;
 }
 
-.posts-container h1 {
-  margin: 0 0 16px;
-  font-size: 26px;
-  line-height: 30px;
+.post-list-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 160px;
+  column-gap: 24px;
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid $extra-light-gray-color;
 }
 
-.posts-container h1 a {
-  color: inherit;
+.post-list-item:first-child {
+  padding-top: 0;
+}
+
+.post-list-content {
+  min-width: 0;
+}
+
+.post-list-title {
+  margin: 0;
+  font-size: 19px;
+  line-height: 26px;
+}
+
+.post-list-title a,
+.post-list-description a,
+.post-list-thumbnail a {
   text-decoration: none;
 }
 
-.posts-container h1 a:hover,
-.posts-container h1 a:focus-visible {
+.post-list-title a:hover,
+.post-list-title a:focus-visible,
+.post-list-description a:hover,
+.post-list-description a:focus-visible {
   text-decoration: underline;
   text-decoration-thickness: 0.06em;
   text-underline-offset: 0.12em;
+}
+
+.post-list-description {
+  margin: 4px 0 0;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.post-list-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 6px;
+  margin: 4px 0 0;
+  color: $light-gray-color;
+  font-family: $sans-serif-font-family;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 /*
   Thumbnail
 */
 
-.thumbnail-container {
-  max-width: 100%;
+.post-list-thumbnail {
+  width: 160px;
+  aspect-ratio: 3 / 2;
   overflow: hidden;
-  margin-bottom: 20px;
+  border-radius: 4px;
 }
 
-.thumbnail-container img {
+.post-list-thumbnail a,
+.post-list-thumbnail img {
   display: block;
   width: 100%;
-  max-height: clamp(12rem, 50vw, 28rem);
+  height: 100%;
+}
+
+.post-list-thumbnail img {
   object-fit: cover;
+}
+
+@media (max-width: $container-responsive-width) {
+  .post-list-item {
+    grid-template-columns: minmax(0, 1fr) 72px;
+  }
+
+  .post-list-title {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .post-list-thumbnail {
+    width: 72px;
+    aspect-ratio: 1;
+  }
 }
 
 /*
