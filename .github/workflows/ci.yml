@@ -1,0 +1,24 @@
+name: Build Jekyll site
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: mise.toml
+          bundler-cache: true
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --strict_front_matter
+        env:
+          JEKYLL_ENV: production
