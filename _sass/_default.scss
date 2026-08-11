@@ -5,9 +5,11 @@
 */
 
 .container {
+  width: 728px;
+  min-width: 280px;
   margin-left: auto;
   margin-right: auto;
-  width: 615px;
+  overflow-wrap: break-word;
 }
 
 .content-container {
@@ -18,7 +20,9 @@
 
 @media (max-width: $container-responsive-width) {
   .container {
-    width: 90vw;
+    width: auto;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }
 
@@ -27,9 +31,9 @@
 */
 
 .header {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-bottom: 4rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 48px;
   font-family: $sans-serif-font-family;
 }
 
@@ -37,14 +41,17 @@
   color: black;
 }
 
-.header-title a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: $body-color;
+.header-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 32px;
 }
 
-.header-subtitle {
-  color: $light-gray-color;
+.header-title a {
+  font-size: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  color: $body-color;
 }
 
 /*
@@ -52,37 +59,75 @@
 */
 
 .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   padding-top: 0.5rem;
-  display: block;
 }
 
 .menu-content {
-  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
 }
 
 .menu-content a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 8px;
   color: $light-gray-color;
-  font-size: 1rem;
-  padding-right: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.menu-content a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.12em;
+}
+
+.menu-content a:first-child {
+  justify-content: flex-start;
+  padding-left: 0;
 }
 
 .social-icons {
-  float: right;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  margin-left: auto;
 }
 
 .social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   color: $light-gray-color;
-  font-size: 1rem;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 @media (max-width: $elements-responsive-width) {
-  .social-icons {
-    float: left;
-    padding-top: 0px;
+  .menu {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
   }
 
   .menu-content {
-    margin-bottom: 5px;
+    width: 100%;
+  }
+
+  .social-icons {
+    margin-left: 0;
   }
 }
 
@@ -92,6 +137,8 @@
 
 .footer {
   color: $light-gray-color;
+  font-family: $sans-serif-font-family;
+  font-size: 14px;
   text-align: center;
   margin: 2rem;
 }

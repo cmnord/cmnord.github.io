@@ -1,0 +1,2 @@
+{% assign image_alt = include.post.image.alt | default: include.post.title %}
+<img src="{{ include.post.image.path | relative_url }}" alt="{{ image_alt | escape }}">

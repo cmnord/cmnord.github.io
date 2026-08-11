@@ -4,7 +4,10 @@ title: Research
 permalink: /research
 ---
 
-**[TORTIS: Retry-Free Software Transactional Memory for Real-Time Systems][tortis-pdf]**
+## TORTIS: Retry-Free Software Transactional Memory for Real-Time Systems
+
+[TORTIS: Retry-Free Software Transactional Memory for Real-Time Systems][tortis-pdf]
+{: .small}
 
 **Claire Nord**\*, Shai Caspin\*, Catherine Nemitz, Howard Schrobe, Hamed
 Okhravi, Jim Anderson, Nathan Burow, and Bryan Ward
@@ -20,7 +23,10 @@ _[RTSS 2021][rtss]_
 talk]][tortis-talk], [[Slides]][tortis-slides]
 {: .small}
 
-**[Retry-Free Software Transactional Memory for Rust][thesis-pdf]**
+## Retry-Free Software Transactional Memory for Rust
+
+[Retry-Free Software Transactional Memory for Rust][thesis-pdf]
+{: .small}
 
 **Claire Nord**
 {: .small}

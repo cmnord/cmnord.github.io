@@ -5,38 +5,100 @@
 */
 
 .posts-container {
-  margin-bottom: 5rem;
-  padding: 0px;
+  margin: 20px 0 64px;
+  padding: 0;
   list-style: none;
 }
 
-.posts-container h1 a {
-  color: inherit;
+.post-list-item {
+  margin: 0;
+  padding: 0;
 }
 
-.posts-container h1 a:hover,
-.posts-container h1 a:focus-visible {
+.post-list-link {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 160px;
+  column-gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid $extra-light-gray-color;
+  text-decoration: none;
+}
+
+.post-list-item:first-child .post-list-link {
+  padding-top: 0;
+}
+
+.post-list-content {
+  min-width: 0;
+}
+
+.post-list-title {
+  margin: 0;
+  font-size: 19px;
+  line-height: 26px;
+}
+
+.post-list-link:hover .post-list-title,
+.post-list-link:focus-visible .post-list-title {
   text-decoration: underline;
   text-decoration-thickness: 0.06em;
   text-underline-offset: 0.12em;
+}
+
+.post-list-description {
+  margin: 4px 0 0;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.post-list-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 6px;
+  margin: 4px 0 0;
+  color: $light-gray-color;
+  font-family: $sans-serif-font-family;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 /*
   Thumbnail
 */
 
-.thumbnail-container {
-  max-width: 100%;
+.post-list-thumbnail {
+  width: 160px;
+  aspect-ratio: 3 / 2;
   overflow: hidden;
-  border-radius: 5px;
-  margin-bottom: 25px;
+  border-radius: 4px;
 }
 
-.thumbnail-container img {
+.post-list-thumbnail img {
   display: block;
   width: 100%;
-  max-height: clamp(12rem, 50vw, 28rem);
+  height: 100%;
+}
+
+.post-list-thumbnail img {
   object-fit: cover;
+}
+
+@media (max-width: $container-responsive-width) {
+  .post-list-link {
+    grid-template-columns: minmax(0, 1fr) 72px;
+  }
+
+  .post-list-title {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .post-list-thumbnail {
+    width: 72px;
+    aspect-ratio: 1;
+  }
 }
 
 /*
@@ -58,8 +120,8 @@
   border: 1px solid $pagination-button-color;
   padding: 15px 45px;
   display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .pagination-active:hover {

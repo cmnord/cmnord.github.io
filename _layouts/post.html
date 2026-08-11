@@ -2,18 +2,19 @@
 layout: default
 ---
 
-<h1>
+<h1 class="post-title">
   {% include post-title.html post=page %}
 </h1>
-{% if page.image %}
-  <img src="{{ site.github.url }}/assets/img/{{ page.image }}" alt="{{ page.image_alt | default: page.title | escape }}">
-{% endif %}
-<article>
-  {{ content }}
-</article>
 {% if site.hide_post_date != true %}
   {% include post-date.html %}
 {% endif %}
+{% if page.image %}
+  {% include post-image.html post=page %}
+{% endif %}
+<hr class="post-header-divider">
+<article class="post-content">
+  {{ content }}
+</article>
 {% if site.hide_post_share != true %}
   {% include social-sharing.html %}
 {% endif %}

@@ -2,8 +2,10 @@
 layout:	post
 title:	"Tech Deep-Dive: Object Detection Ensembles as Graph Cliques"
 date:	2019-03-14
-image: obj/cat-dog.jpeg
-image_alt: "A sleeping dog and a cat with object-detection boxes labeled DOG 80% and CAT 95%"
+description: "My intern project for Synapse Technology (acquired) on composing multiple CV models for better output"
+image:
+  path: /assets/img/obj/cat-dog.jpeg
+  alt: "A sleeping dog and a cat with object-detection boxes labeled DOG 80% and CAT 95%"
 tags: [ml, security, ai, startup, writing]
 ---
 

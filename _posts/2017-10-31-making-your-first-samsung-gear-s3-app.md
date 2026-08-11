@@ -2,8 +2,10 @@
 layout:	post
 title:	"Making Your First Samsung Gear S3 App"
 date:	2017-10-31
-image: watch/goal.jpeg
-image_alt: "A Samsung Gear S3 on a wrist displaying Hello D-Lab and the time"
+description: "Learn from my mistakes and set up Tizen Studio to make your first Gear app"
+image:
+  path: /assets/img/watch/goal.jpeg
+  alt: "A Samsung Gear S3 on a wrist displaying Hello D-Lab and the time"
 tags: [samsung, samsung gear s3, smartwatch, writing]
 ---
 
