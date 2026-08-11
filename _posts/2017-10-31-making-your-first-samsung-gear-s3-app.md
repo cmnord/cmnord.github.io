@@ -3,6 +3,7 @@ layout:	post
 title:	"Making Your First Samsung Gear S3 App"
 date:	2017-10-31
 image: watch/goal.jpeg
+image_alt: "A Samsung Gear S3 on a wrist displaying Hello D-Lab and the time"
 tags: [samsung, samsung gear s3, smartwatch, writing]
 ---
 

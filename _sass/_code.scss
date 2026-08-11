@@ -32,10 +32,9 @@ pre {
   padding: 1rem;
   font-size: 0.8rem;
   line-height: 1.4;
-  white-space: pre;
   white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  word-break: normal;
   background-color: $code-background-color;
 }
 
@@ -46,10 +45,45 @@ pre code {
   background-color: transparent;
 }
 
-/* Horizontal code overflow fix */
+/* Code blocks wrap by default and can opt back into horizontal scrolling. */
 pre.highlight {
-  white-space: pre;
   overflow-x: auto;
+}
+
+pre.highlight.code-nowrap {
+  white-space: pre;
+  overflow-wrap: normal;
+}
+
+.highlight.has-code-wrap-toggle {
+  position: relative;
+}
+
+.highlight.has-code-wrap-toggle pre.highlight {
+  padding-right: 3rem;
+}
+
+.code-wrap-toggle {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 1;
+  display: grid;
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  place-items: center;
+  border: 1px solid $extra-light-gray-color;
+  border-radius: 3px;
+  background: $code-background-color;
+  color: $light-gray-color;
+  font-size: 0.75rem;
+}
+
+.code-wrap-toggle:hover,
+.code-wrap-toggle:focus-visible,
+.code-wrap-toggle[aria-pressed="true"] {
+  color: $dark-gray-color;
 }
 
 /* Pygments via Jekyll */
