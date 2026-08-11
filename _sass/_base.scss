@@ -215,10 +215,12 @@ details[open] summary {
 */
 
 table {
-  border-collapse: collapse;
-  display: block;
-  margin: 0 0 20px;
-  overflow-x: auto;
+  border: 1px solid $extra-light-gray-color;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 6px;
+  margin: 24px 0;
+  overflow: hidden;
   width: 100%;
   font-family: $sans-serif-font-family;
   font-size: 15px;
@@ -227,19 +229,21 @@ table {
 
 th,
 td {
+  padding: 10px 12px;
   border-bottom: 1px solid $extra-light-gray-color;
-}
-
-th,
-td {
-  padding: 12px 16px;
   text-align: left;
   vertical-align: top;
 }
 
 th {
-  border-bottom-color: $dark-gray-color;
+  background: $code-background-color;
+  font-size: 13px;
   font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
 }
 
 kbd {
@@ -255,6 +259,15 @@ kbd {
 @media (max-width: $container-responsive-width) {
   body {
     font-size: 17px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 8px 10px;
   }
 }
 
