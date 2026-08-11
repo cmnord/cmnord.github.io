@@ -1,0 +1,5 @@
+{% if include.post.title_markdown %}
+  {{ include.post.title_markdown | markdownify | remove: '<p>' | remove: '</p>' | strip }}
+{% else %}
+  {{ include.post.title }}
+{% endif %}

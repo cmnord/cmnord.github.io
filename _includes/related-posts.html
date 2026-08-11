@@ -9,7 +9,7 @@
           <li>
             <h3>
               <a href="{{ site.github.url }}{{ mypost.url }}">
-                {{ mypost.title }}
+                {% include post-title.html post=mypost %}
                 <!--<img src="{{ site.url }}{{ site.baseurl }}/images/{{ mypost.image.teaser }}">-->
                 <!--<small>{{ mypost.date | date: "%B %-d, %Y" }}</small>-->
               </a>
