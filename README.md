@@ -7,18 +7,25 @@
 
 ## Setup
 
-1. Install the [Ruby][ruby] version in `.ruby-version`.
-2. Install [Bundler][bundler].
-3. Run `bundle install`.
+This project uses [mise][mise] to install and run the Ruby version pinned in
+`mise.toml`. Install and activate mise once, then run the setup script to
+install Ruby, Bundler, and the project's gems:
+
+```sh
+./scripts/setup.sh
+```
+
+Conductor workspaces bootstrap mise automatically when it is not already
+installed.
 
 ## Development
 
-Run `bundle exec jekyll serve --livereload` and open <http://localhost:4000>.
+Run `./scripts/serve.sh` and open <http://localhost:4000>.
 
 To verify a production build, run:
 
 ```sh
-JEKYLL_ENV=production bundle exec jekyll build --strict_front_matter
+JEKYLL_ENV=production mise exec -- bundle exec jekyll build --strict_front_matter
 ```
 
 ## License
@@ -30,6 +37,5 @@ Open sourced under the [MIT license][license].
 [mfsite]: http://motherfuckingwebsite.com/
 [bettermfsite]: http://bettermotherfuckingwebsite.com/
 [m2j]: https://github.com/Donohue/medium-to-jekyll
-[ruby]: https://www.ruby-lang.org/en/documentation/installation/
-[bundler]: https://bundler.io/
+[mise]: https://mise.jdx.dev/
 [license]: https://github.com/cmnord/cmnord.github.io/blob/main/LICENSE.md

@@ -23,7 +23,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: .ruby-version
+          ruby-version: mise.toml
           bundler-cache: true
       - name: Setup Pages
         uses: actions/configure-pages@v6
