@@ -69,20 +69,17 @@
 .menu-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 2px;
 }
 
 .menu-content a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-width: 44px;
   min-height: 44px;
-  box-sizing: border-box;
-  padding: 0 14px;
-  border: 1px solid $extra-light-gray-color;
-  border-radius: 6px;
-  background-color: white;
-  color: $body-color;
+  padding: 0 8px;
+  color: $light-gray-color;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
@@ -90,12 +87,9 @@
 }
 
 .menu-content a:hover {
-  border-color: $light-gray-color;
-  background-color: $code-background-color;
-}
-
-.menu-content a:active {
-  background-color: $pagination-button-color;
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.12em;
 }
 
 .social-icons {
