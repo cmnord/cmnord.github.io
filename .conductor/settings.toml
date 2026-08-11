@@ -5,7 +5,7 @@ setup = "./scripts/setup.sh"
 run_mode = "concurrent"
 
 [scripts.run.dev]
-available_in = ["local"]
+available_in = ["local", "cloud"]
 command = "./scripts/serve.sh"
 default = true
 icon = "play"
