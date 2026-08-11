@@ -92,6 +92,11 @@
   text-underline-offset: 0.12em;
 }
 
+.menu-content a:first-child {
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
 .social-icons {
   flex: 0 0 auto;
   margin-left: auto;
