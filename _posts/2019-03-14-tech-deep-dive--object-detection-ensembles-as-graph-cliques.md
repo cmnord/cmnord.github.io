@@ -3,6 +3,7 @@ layout:	post
 title:	"Tech Deep-Dive: Object Detection Ensembles as Graph Cliques"
 date:	2019-03-14
 image: obj/cat-dog.jpeg
+image_alt: "A sleeping dog and a cat with object-detection boxes labeled DOG 80% and CAT 95%"
 tags: [ml, security, ai, startup, writing]
 ---
 
@@ -137,4 +138,3 @@ _Thanks to Noah Moroze, Simanta Gautam, Bruno B. Ferrari Faviero, Ian Cinnamon, 
 
 [medium]: https://medium.com/synapse-blog/tech-deep-dive-object-detection-ensembles-as-graph-cliques-a7f7d33b5477
 [acquisition]: https://www.businesswire.com/news/home/20200610005917/en/Rapiscan-Continues-Innovation-Leadership-with-Acquisition-of-Advanced-Artificial-Intelligence-AI-Technology
-  

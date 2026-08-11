@@ -3,6 +3,7 @@ layout:	post
 title:	"Get to know HKN: Tutoring"
 date:	2018-01-02
 image: tutor.jpeg
+image_alt: "Two students working together at laptops during an HKN tutoring session"
 tags: [education, mit, tutoring, writing]
 ---
 

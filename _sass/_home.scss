@@ -10,6 +10,17 @@
   list-style: none;
 }
 
+.posts-container h1 a {
+  color: inherit;
+}
+
+.posts-container h1 a:hover,
+.posts-container h1 a:focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.12em;
+}
+
 /*
   Thumbnail
 */
@@ -22,8 +33,10 @@
 }
 
 .thumbnail-container img {
-  margin-top: -11.5%;
-  margin-bottom: -11.5%;
+  display: block;
+  width: 100%;
+  max-height: clamp(12rem, 50vw, 28rem);
+  object-fit: cover;
 }
 
 /*
