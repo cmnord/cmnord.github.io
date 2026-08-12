@@ -6,6 +6,8 @@ layout: default
   {{ page.title }}
 </h1>
 
+{% include blog-subscribe.html %}
+
 {% assign current_year = site.time | date: "%Y" %}
 <ol class="posts-container">
   {% for post in site.posts %}

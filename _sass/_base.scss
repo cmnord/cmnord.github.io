@@ -87,8 +87,20 @@ a:active {
 }
 
 :focus-visible {
-  outline: 2px solid $substack-orange;
+  outline: 2px solid $accent-color;
   outline-offset: 3px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 strong,
@@ -150,7 +162,7 @@ figcaption,
 blockquote {
   margin: 20px 0;
   padding: 0 0 0 20px;
-  border-left: 4px solid $substack-orange;
+  border-left: 4px solid $accent-color;
   color: inherit;
 }
 

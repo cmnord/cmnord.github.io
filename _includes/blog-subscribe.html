@@ -1,0 +1,43 @@
+{% assign feed_url = "/feed.xml" | relative_url %}
+<section class="blog-subscribe" aria-labelledby="blog-subscribe-title">
+  <h2 class="blog-subscribe-title" id="blog-subscribe-title">Get email updates</h2>
+
+  <div class="blog-subscribe-options">
+    {% if site.buttondown_username %}
+      <form
+        class="blog-subscribe-form embeddable-buttondown-form"
+        action="https://buttondown.com/api/emails/embed-subscribe/{{ site.buttondown_username | url_encode }}"
+        method="post"
+      >
+        <label class="visually-hidden" for="bd-email">Enter your email</label>
+        <input
+          id="bd-email"
+          class="blog-subscribe-email"
+          type="email"
+          name="email"
+          autocomplete="email"
+          inputmode="email"
+          placeholder="you@example.com"
+          required
+        >
+        <input type="hidden" name="embed" value="1">
+        <button class="blog-subscribe-button" type="submit">Subscribe</button>
+      </form>
+    {% endif %}
+  </div>
+
+  <div class="blog-subscribe-meta">
+    {% if site.buttondown_username %}
+      <p class="blog-subscribe-note">
+        <a href="https://buttondown.com/refer/{{ site.buttondown_username | url_encode }}" target="_blank">Powered by Buttondown</a>
+      </p>
+    {% endif %}
+    <p class="blog-rss-note">
+      <a href="{{ feed_url }}" type="application/atom+xml" target="_blank">
+        Subscribe via RSS
+        <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i>
+        <span class="visually-hidden">(opens in a new tab)</span>
+      </a>
+    </p>
+  </div>
+</section>
