@@ -1,0 +1,152 @@
+/*
+  Site container
+*/
+.container {
+  width: 728px;
+  min-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-wrap: break-word;
+}
+
+.content-container {
+  margin-bottom: 4rem;
+}
+
+/*48em*/
+@media (max-width: 768px) {
+  .container {
+    width: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+/*
+  Header
+*/
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 48px;
+  font-family: var(--font-sans);
+}
+
+.header a:hover {
+  color: black;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.header-title a {
+  font-size: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+/*
+  Menu
+*/
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 0.5rem;
+}
+
+.menu-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.menu-content a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 8px;
+  color: var(--color-muted);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.menu-content a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.12em;
+}
+
+.menu-content a:first-child {
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--color-muted);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+@media (max-width: 650px) {
+  .menu {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .menu-content {
+    width: 100%;
+  }
+  .social-icons {
+    margin-left: 0;
+  }
+}
+/*
+  Footer
+*/
+.footer {
+  color: var(--color-muted);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  text-align: center;
+  margin: 2rem;
+}
+
+.footer a {
+  color: var(--color-muted);
+  padding: 10px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--color-text);
+}
+
+.footer-description {
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 1rem;
+  color: var(--color-muted);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+}

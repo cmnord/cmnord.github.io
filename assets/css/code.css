@@ -1,0 +1,132 @@
+/*
+  Code
+*/
+code,
+pre {
+  font-family: var(--font-code);
+  font-variant-ligatures: none;
+}
+
+code {
+  padding: 0.15em 0.35em;
+  font-size: 0.78em;
+  overflow-wrap: anywhere;
+  background-color: var(--color-code-background);
+  border-radius: 3px;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+  font-size: 0.8em;
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  max-width: 100%;
+  padding: 18px 20px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  tab-size: 2;
+  -webkit-overflow-scrolling: touch;
+  background-color: var(--color-code-background);
+}
+
+pre code {
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  overflow-wrap: normal;
+  background-color: transparent;
+}
+
+pre.highlight.code-nowrap {
+  white-space: pre;
+  overflow-wrap: normal;
+}
+
+.highlight.has-code-wrap-toggle {
+  position: relative;
+}
+
+.highlight.has-code-wrap-toggle pre.highlight {
+  padding-right: 3rem;
+}
+
+.code-wrap-toggle {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 1;
+  display: grid;
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  background: var(--color-code-background);
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.code-wrap-toggle:hover,
+.code-wrap-toggle:focus-visible,
+.code-wrap-toggle[aria-pressed="true"] {
+  color: var(--color-text);
+}
+
+/* Pygments via Jekyll */
+.highlight {
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.highlight pre {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  pre {
+    padding: 16px;
+    font-size: 12px;
+  }
+}
+/* Gist via GitHub Pages */
+.gist .gist-file {
+  font-family: var(--font-code) !important;
+}
+
+.gist .markdown-body {
+  padding: 15px;
+}
+
+.gist pre {
+  padding: 0;
+  background-color: transparent;
+}
+
+.gist .gist-file .gist-data {
+  font-size: 0.8rem !important;
+  line-height: 1.4;
+}
+
+.gist code {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0;
+}
