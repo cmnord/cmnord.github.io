@@ -50,6 +50,15 @@ def email_body(post, canonical_url)
   article = page.at_css("article.post-content")
   abort "Could not find the rendered post body for #{post.relative_path}." unless article
 
+  # Rouge wraps syntax-highlighted tokens in spans. Buttondown's CSS inliner
+  # colors those unknown spans black, overriding its white-on-dark code style.
+  # Unwrap only the email copy so Buttondown can style each <pre><code> block;
+  # the website keeps its full syntax highlighting.
+  article.css("pre code span").each do |span|
+    span.children.to_a.each { |child| span.add_previous_sibling(child) }
+    span.remove
+  end
+
   article.css("a[href]").each do |link|
     link["href"] = absolute_url(canonical_url, link["href"])
   end
@@ -125,7 +134,7 @@ paths.each do |path|
     canonical_url: canonical_url,
     description: post.data.fetch("description", ""),
     image: image_url(site.config.fetch("url"), post),
-    status: "sent",
+    status: "about_to_send",
     metadata: {
       source: "github_actions",
       source_path: path,
@@ -146,9 +155,12 @@ paths.each do |path|
   request = Net::HTTP::Post.new(API_URL)
   request["Authorization"] = "Token #{ENV.fetch("BUTTONDOWN_API_KEY")}"
   request["Content-Type"] = "application/json"
+  # Buttondown requires this explicit confirmation when an API key first queues
+  # an email for sending; it prevents an accidental first live send.
+  request["X-Buttondown-Live-Dangerously"] = "true"
   # Buttondown deduplicates requests with the same X-Idempotency-Key. Deriving
   # it from the canonical URL makes workflow retries safe for each stable post.
-  request["X-Idempotency-Key"] = Digest::SHA256.hexdigest("clairenord.com:#{canonical_url}")
+  request["X-Idempotency-Key"] = Digest::SHA256.hexdigest(canonical_url)
   request.body = JSON.generate(payload)
 
   response = Net::HTTP.start(API_URL.hostname, API_URL.port, use_ssl: true) do |http|
@@ -160,5 +172,5 @@ paths.each do |path|
   end
 
   result = JSON.parse(response.body)
-  puts "Published #{path} as #{result.fetch("id", "an email")}."
+  puts "Queued #{path} for sending as #{result.fetch("id", "an email")}."
 end
