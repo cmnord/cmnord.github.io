@@ -17,6 +17,7 @@ if [ -z "$mise_bin" ]; then
   fi
 fi
 
+"$mise_bin" trust
 MISE_RUBY_COMPILE=false "$mise_bin" install
 "$mise_bin" exec -- gem install bundler --version 4.0.17
 "$mise_bin" exec -- bundle install

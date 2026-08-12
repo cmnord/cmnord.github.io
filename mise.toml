@@ -1,2 +1,6 @@
 [tools]
 ruby = "3.4.10"
+# The standalone oxfmt CLI from oxc's app release. Note this is a different
+# build from the `oxfmt` npm package, which also formats .html and would
+# reformat the Liquid templates in _includes/ and _layouts/.
+"github:oxc-project/oxc" = { version = "apps_v1.78.0", exe = "oxfmt", matching = "oxfmt" }
