@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
-# Finds posts added between two Git revisions and publishes them through the
-# Jekyll-aware Buttondown publisher. Extra arguments are passed to the publisher
-# (for example, --output json).
+# Finds added posts and posts whose `published:` front matter changed between
+# two Git revisions, then passes them to the Jekyll-aware Buttondown publisher.
+# Jekyll filters out posts that remain unpublished. Extra arguments are passed
+# to the publisher (for example, --output json).
 
 set -euo pipefail
 
@@ -23,11 +24,23 @@ if [[ $before =~ ^0+$ ]]; then
 fi
 
 changes=$(mktemp)
-trap 'rm -f "$changes"' EXIT
+modified=$(mktemp)
+trap 'rm -f "$changes" "$modified"' EXIT
 
 git diff --name-only --diff-filter=A -z \
   "$before" "$after" -- "${POST_PATHS[@]}" \
   > "$changes"
+git diff --name-only --diff-filter=M -z -G '^[[:space:]]*published:' \
+  "$before" "$after" -- "${POST_PATHS[@]}" \
+  > "$modified"
+
+while IFS= read -r -d '' post; do
+  if git diff --unified=0 "$before" "$after" -- "$post" \
+    | grep -Eiq '^-[[:space:]]*published:[[:space:]]*false([[:space:]]*(#.*)?)?$'; then
+    printf '%s\0' "$post" >> "$changes"
+  fi
+done < "$modified"
+
 mapfile -d '' -t posts < "$changes"
 
 if (( ${#posts[@]} == 0 )); then

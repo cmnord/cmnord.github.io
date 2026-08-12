@@ -36,7 +36,7 @@ JEKYLL_ENV=production mise exec -- bundle exec jekyll build --strict_front_matte
 
 ## Newsletter publishing
 
-After deploying to `main`, GitHub Actions sends new posts to Buttondown.
+After deploying to `main`, GitHub Actions sends newly published posts to Buttondown.
 Create `BUTTONDOWN_API_KEY` with **Emails** and **Sending** write access.
 
 Preview the email with:
