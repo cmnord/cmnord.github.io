@@ -116,7 +116,7 @@ _We’ve grouped the detections into three cliques. The clique on the left conta
 
 #### Voting on cliques
 
-Now we have cliques of inferences that each refer to one object in the image. Which of these cliques should we accept? The fact that only Model A detected an object near the top of the image (Clique 3) means that Model B did *not* think there was an object near the top of the image. Here is where we can introduce *voting* to increase the accuracy of our ensemble detection. A model votes for a clique if one of the inferences in the clique comes from that model, and only accept a clique if majority of voters vote for it. Let’s define a *voting threshold *as the minimum percentage of models that must vote for a clique for us to accept it.
+Now we have cliques of inferences that each refer to one object in the image. Which of these cliques should we accept? The fact that only Model A detected an object near the top of the image (Clique 3) means that Model B did *not* think there was an object near the top of the image. Here is where we can introduce *voting* to increase the accuracy of our ensemble detection. A model votes for a clique if one of the inferences in the clique comes from that model, and only accept a clique if majority of voters vote for it. Let’s define a _voting threshold_ as the minimum percentage of models that must vote for a clique for us to accept it.
 
 Suppose we had a voting threshold of 0.5, so both models need to vote for a clique for us to accept it. Then we’d reject Clique 2 and Clique 3 because they each only have one vote, but we’d accept Clique 1 because it has two votes.
 
