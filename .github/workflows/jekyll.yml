@@ -44,3 +44,24 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+  newsletter:
+    name: Publish new posts to Buttondown
+    if: github.event_name == 'push'
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: mise.toml
+          bundler-cache: true
+      - name: Publish newly added posts
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+        run: scripts/publish-new-posts.sh "${{ github.event.before }}" "${{ github.sha }}"
