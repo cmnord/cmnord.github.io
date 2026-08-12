@@ -22,9 +22,7 @@ description: "Claire's personal website"
 author: "Claire Nord"
 url: "https://clairenord.com"
 
-# RSS 2.0 can be used instead of Atom by uncommenting following two lines
-#feed:
-#  path: rss-feed.xml
+buttondown_username: "cnord"
 
 # https://github.com/github/pages-gem/issues/399
 github: [metadata]
