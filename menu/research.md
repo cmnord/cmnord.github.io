@@ -44,7 +44,7 @@ _[MIT M.Eng thesis 2020][dspace]_
 
 :mortar_board: [Google Scholar][gscholar]
 
-[tortis-teaser]: {{ site.github.url }}/assets/video/RTSS2021-TORTIS-teaser.mp4
+[tortis-teaser]: {{site.github.url}}/assets/video/RTSS2021-TORTIS-teaser.mp4
 [gscholar]: https://scholar.google.com/citations?user=FdBYqlcAAAAJ&hl=en
 [tortis-pdf]: https://www.cs.unc.edu/~anderson/papers/rtss21a.pdf
 [rtss]: http://2021.rtss.org/
