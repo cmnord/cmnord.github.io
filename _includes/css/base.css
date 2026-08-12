@@ -1,9 +1,6 @@
-@use "variables" as *;
-
 /*
   Base
 */
-
 html {
   min-height: 100%;
   overflow-x: hidden;
@@ -20,8 +17,8 @@ body {
   min-height: 100%;
   margin: 0;
   background: #fff;
-  color: $body-color;
-  font-family: $serif-font-family;
+  color: var(--color-text);
+  font-family: var(--font-serif);
   font-size: 19px;
   font-weight: 400;
   line-height: 1.6;
@@ -49,8 +46,8 @@ h4,
 h5,
 h6 {
   margin: 1em 0 0.625em;
-  color: $dark-gray-color;
-  font-family: $sans-serif-font-family;
+  color: var(--color-text);
+  font-family: var(--font-sans);
   font-weight: 700;
   line-height: 1.16;
   overflow-wrap: anywhere;
@@ -59,18 +56,23 @@ h6 {
 h1 {
   font-size: 2em;
 }
+
 h2 {
   font-size: 1.625em;
 }
+
 h3 {
   font-size: 1.375em;
 }
+
 h4 {
   font-size: 1.125em;
 }
+
 h5 {
   font-size: 0.83em;
 }
+
 h6 {
   font-size: 0.67em;
 }
@@ -87,7 +89,7 @@ a:active {
 }
 
 :focus-visible {
-  outline: 2px solid $accent-color;
+  outline: 2px solid var(--color-accent);
   outline-offset: 3px;
 }
 
@@ -152,8 +154,8 @@ figure {
 figcaption,
 .caption {
   margin-top: 8px;
-  color: $light-gray-color;
-  font-family: $sans-serif-font-family;
+  color: var(--color-muted);
+  font-family: var(--font-sans);
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -162,7 +164,7 @@ figcaption,
 blockquote {
   margin: 20px 0;
   padding: 0 0 0 20px;
-  border-left: 4px solid $accent-color;
+  border-left: 4px solid var(--color-accent);
   color: inherit;
 }
 
@@ -175,7 +177,7 @@ hr {
   margin: 32px 0;
   padding: 0;
   border: 0;
-  background: $extra-light-gray-color;
+  background: var(--color-border);
 }
 
 ul,
@@ -213,7 +215,7 @@ dd {
 details {
   margin: 20px 0;
   padding: 16px 20px;
-  border: 1px solid $extra-light-gray-color;
+  border: 1px solid var(--color-border);
   border-radius: 6px;
 }
 
@@ -229,70 +231,62 @@ details[open] summary {
 /*
   Tables
 */
-
 .post-content table {
-  border: 1px solid $extra-light-gray-color;
+  border: 1px solid var(--color-border);
   border-collapse: separate;
   border-spacing: 0;
   border-radius: 6px;
   margin: 24px 0;
   overflow: hidden;
   width: 100%;
-  font-family: $sans-serif-font-family;
+  font-family: var(--font-sans);
   font-size: 15px;
   line-height: 1.45;
-
-  th,
-  td {
-    padding: 10px 12px;
-    border-bottom: 1px solid $extra-light-gray-color;
-    text-align: left;
-    vertical-align: top;
-  }
-
-  th {
-    background: $code-background-color;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-  }
-
-  tbody tr:last-child td {
-    border-bottom: 0;
-  }
+}
+.post-content table th,
+.post-content table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: top;
+}
+.post-content table th {
+  background: var(--color-code-background);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.post-content table tbody tr:last-child td {
+  border-bottom: 0;
 }
 
 kbd {
   padding: 0.1em 0.35em;
-  border: 1px solid $extra-light-gray-color;
+  border: 1px solid var(--color-border);
   border-bottom-width: 2px;
   border-radius: 3px;
-  background: $code-background-color;
-  font-family: $code-font-family;
+  background: var(--color-code-background);
+  font-family: var(--font-code);
   font-size: 0.75em;
 }
 
-@media (max-width: $container-responsive-width) {
+@media (max-width: 768px) {
   body {
     font-size: 17px;
   }
-
   .post-content table {
     font-size: 14px;
-
-    th,
-    td {
-      padding: 8px 10px;
-    }
+  }
+  .post-content table th,
+  .post-content table td {
+    padding: 8px 10px;
   }
 }
-
 @media print {
   body {
     color: #000;
     font-size: 12pt;
   }
-
   a {
     text-decoration: underline;
   }

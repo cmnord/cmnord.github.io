@@ -1,0 +1,15 @@
+---
+permalink: /assets/css/main.css
+---
+{% comment %}
+Jekyll inlines the modular CSS source files below into one main.css asset. This
+keeps the source maintainable while avoiding extra render-blocking stylesheet
+requests in the browser.
+{% endcomment %}
+{% include css/variables.css %}
+{% include css/base.css %}
+{% include css/code.css %}
+{% include css/default.css %}
+{% include css/home.css %}
+{% include css/post.css %}
+{% include css/social-icons.css %}
