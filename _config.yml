@@ -15,6 +15,8 @@ plugins:
   - jekyll-target-blank
   # Converts emoji shortcodes into emoji images.
   - jemoji
+  # Adds content hashes to local asset URLs so deploys bypass stale caches.
+  - jekyll-cache-bust
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title: "Claire Nord"
