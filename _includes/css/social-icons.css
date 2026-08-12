@@ -1,0 +1,107 @@
+/*
+  Social media icons
+*/
+.sharing-icons {
+  display: flex;
+}
+
+.sharing-icons a,
+.sharing-icons button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-muted);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.sharing-icons [hidden] {
+  display: none;
+}
+
+.sharing-icons i {
+  padding: 5px;
+}
+
+.fa-envelope,
+.fa-bluesky,
+.fa-instagram,
+.fa-github,
+.fa-linkedin,
+.fa-x-twitter,
+.fa-pinterest,
+.fa-medium,
+.fa-codepen,
+.fa-rss-square,
+.fa-book,
+.fa-podcast {
+  padding: 5px;
+  transition: color var(--icon-transition-duration);
+}
+
+.fa-envelope {
+  --icon-color: #f39c12;
+}
+
+.fa-bluesky {
+  --icon-color: #1185fe;
+}
+
+.fa-instagram {
+  --icon-color: #375989;
+}
+
+.fa-github {
+  --icon-color: #343434;
+}
+
+.fa-linkedin {
+  --icon-color: #0073a4;
+}
+
+.fa-x-twitter,
+.fa-codepen {
+  --icon-color: #000;
+}
+
+.fa-pinterest {
+  --icon-color: #bd081c;
+}
+
+.fa-medium {
+  --icon-color: #00ab6c;
+}
+
+.fa-rss-square {
+  --icon-color: #ff6600;
+}
+
+/* https://brandcolors.net/b/goodreads */
+.fa-book {
+  --icon-color: #553b08;
+}
+
+/* https://www.schemecolor.com/apple-podcasts-app-icon-2017-colors.php */
+.fa-podcast {
+  --icon-color: #872ec4;
+}
+
+.fa-envelope:hover,
+.fa-bluesky:hover,
+.fa-instagram:hover,
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-x-twitter:hover,
+.fa-pinterest:hover,
+.fa-medium:hover,
+.fa-codepen:hover,
+.fa-rss-square:hover,
+.fa-book:hover,
+.fa-podcast:hover {
+  color: var(--icon-color);
+}

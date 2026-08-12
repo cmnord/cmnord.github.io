@@ -1,9 +1,6 @@
-@use "variables" as *;
-
 /*
   Site container
 */
-
 .container {
   width: 728px;
   min-width: 280px;
@@ -17,24 +14,21 @@
 }
 
 /*48em*/
-
-@media (max-width: $container-responsive-width) {
+@media (max-width: 768px) {
   .container {
     width: auto;
     margin-left: 16px;
     margin-right: 16px;
   }
 }
-
 /*
   Header
 */
-
 .header {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 48px;
-  font-family: $sans-serif-font-family;
+  font-family: var(--font-sans);
 }
 
 .header a:hover {
@@ -51,13 +45,12 @@
   font-size: inherit;
   font-weight: 700;
   text-decoration: none;
-  color: $body-color;
+  color: var(--color-text);
 }
 
 /*
   Menu
 */
-
 .menu {
   display: flex;
   align-items: center;
@@ -79,7 +72,7 @@
   min-width: 44px;
   min-height: 44px;
   padding: 0 8px;
-  color: $light-gray-color;
+  color: var(--color-muted);
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
@@ -110,54 +103,50 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  color: $light-gray-color;
+  color: var(--color-muted);
   font-size: 18px;
   text-decoration: none;
 }
 
-@media (max-width: $elements-responsive-width) {
+@media (max-width: 650px) {
   .menu {
     align-items: flex-start;
     flex-direction: column;
     gap: 8px;
   }
-
   .menu-content {
     width: 100%;
   }
-
   .social-icons {
     margin-left: 0;
   }
 }
-
 /*
   Footer
 */
-
 .footer {
-  color: $light-gray-color;
-  font-family: $sans-serif-font-family;
+  color: var(--color-muted);
+  font-family: var(--font-sans);
   font-size: 14px;
   text-align: center;
   margin: 2rem;
 }
 
 .footer a {
-  color: $light-gray-color;
+  color: var(--color-muted);
   padding: 10px;
   text-decoration: none;
 }
 
 .footer a:hover {
-  color: $dark-gray-color;
+  color: var(--color-text);
 }
 
 .footer-description {
   display: block;
   margin-top: 3px;
   margin-bottom: 1rem;
-  color: $light-gray-color;
-  font-family: $sans-serif-font-family;
+  color: var(--color-muted);
+  font-family: var(--font-sans);
   font-size: 0.8rem;
 }
