@@ -7,4 +7,4 @@
   <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | url_encode }}" aria-label="Share on LinkedIn" title="Share on LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
   <a href="https://x.com/intent/post?text={{ page.title | url_encode }}&amp;url={{ share_url | url_encode }}" aria-label="Share on X" title="Share on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
 </div>
-<script src="{{ site.github.url }}/assets/js/social-sharing.js" defer></script>
+<script src="{{ '/assets/js/social-sharing.js' | relative_url | bust_file_cache }}" defer></script>
