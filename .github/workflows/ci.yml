@@ -35,3 +35,13 @@ jobs:
         run: bundle exec jekyll build --strict_front_matter
         env:
           JEKYLL_ENV: production
+      - name: Generate newsletter preview
+        run: >-
+          bundle exec ruby scripts/publish-to-buttondown.rb
+          --output html _posts/2026-08-11-whoport.md
+          > "$RUNNER_TEMP/newsletter-preview.html"
+      - name: Upload newsletter preview
+        uses: actions/upload-artifact@v7
+        with:
+          name: newsletter-preview
+          path: ${{ runner.temp }}/newsletter-preview.html

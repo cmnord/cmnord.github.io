@@ -34,6 +34,23 @@ To verify a production build, run:
 JEKYLL_ENV=production mise exec -- bundle exec jekyll build --strict_front_matter
 ```
 
+## Newsletter publishing
+
+After deploying to `main`, GitHub Actions sends newly published posts to Buttondown.
+Create `BUTTONDOWN_API_KEY` with **Emails** and **Sending** write access.
+
+Preview the email with:
+
+```sh
+mise exec -- bundle exec ruby scripts/publish-to-buttondown.rb \
+  --output html _posts/your-post.md > /tmp/newsletter-preview.html
+open /tmp/newsletter-preview.html
+```
+
+Use `--output json` to print the API payload. Jekyll posts with `published: false`
+are not sent. Workflow retries are safe because Buttondown deduplicates each
+request using a SHA-256 idempotency key derived from the post's canonical URL.
+
 ## License
 
 Open sourced under the [MIT license][license].
