@@ -70,8 +70,10 @@
   align-items: center;
   justify-content: center;
   min-width: 44px;
-  min-height: 44px;
+  height: 44px;
   padding: 0 8px;
+  border: 1px solid transparent;
+  border-radius: 4px;
   color: var(--color-muted);
   font-size: 14px;
   font-weight: 600;
@@ -85,8 +87,18 @@
   text-underline-offset: 0.12em;
 }
 
+.menu-content a.is-current {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-thickness: 0.12em;
+  text-underline-offset: 0.2em;
+}
+
+.menu-content a.is-current:hover {
+  color: var(--color-text);
+}
+
 .menu-content a:first-child {
-  justify-content: flex-start;
   padding-left: 0;
 }
 

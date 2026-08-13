@@ -18,6 +18,10 @@ htmlproofer_ignored_urls=(
   '/hkn-tutoring2\.mit\.edu/'
   '/underground-guide\.mit\.edu/'
 
+  # These archived MIT links intermittently time out in GitHub Actions.
+  '/groups\.mit\.edu/webmoira/list/hkn-interest/'
+  '/d-lab\.mit\.edu/research-about/'
+
   # These domains reject automated link checks with status 403.
   '/beaumont\.org/'
   '/medium\.com/'
