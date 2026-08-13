@@ -28,6 +28,38 @@
   padding: 5px;
 }
 
+.social-icons a i,
+.sharing-icons a i,
+.sharing-icons button i {
+  transition: transform 150ms ease;
+}
+
+.social-icons a:hover i,
+.social-icons a:focus-visible i,
+.sharing-icons a:hover i,
+.sharing-icons a:focus-visible i,
+.sharing-icons button:hover i,
+.sharing-icons button:focus-visible i {
+  transform: translateY(-2px) scale(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-icons a i,
+  .sharing-icons a i,
+  .sharing-icons button i {
+    transition: none;
+  }
+
+  .social-icons a:hover i,
+  .social-icons a:focus-visible i,
+  .sharing-icons a:hover i,
+  .sharing-icons a:focus-visible i,
+  .sharing-icons button:hover i,
+  .sharing-icons button:focus-visible i {
+    transform: none;
+  }
+}
+
 .fa-envelope,
 .fa-bluesky,
 .fa-instagram,
@@ -40,8 +72,8 @@
 .fa-rss-square,
 .fa-book,
 .fa-podcast {
+  color: var(--icon-color);
   padding: 5px;
-  transition: color var(--icon-transition-duration);
 }
 
 .fa-envelope {
@@ -89,19 +121,4 @@
 /* https://www.schemecolor.com/apple-podcasts-app-icon-2017-colors.php */
 .fa-podcast {
   --icon-color: #872ec4;
-}
-
-.fa-envelope:hover,
-.fa-bluesky:hover,
-.fa-instagram:hover,
-.fa-github:hover,
-.fa-linkedin:hover,
-.fa-x-twitter:hover,
-.fa-pinterest:hover,
-.fa-medium:hover,
-.fa-codepen:hover,
-.fa-rss-square:hover,
-.fa-book:hover,
-.fa-podcast:hover {
-  color: var(--icon-color);
 }
