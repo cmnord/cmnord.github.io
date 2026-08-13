@@ -7,6 +7,7 @@ disqus:
 google-ID: "G-FR9124F9BS"
 
 menu:
+  - { name: "Home", url: "" }
   - { name: "Blog", url: "blog" }
   - { name: "Research", url: "research" }
   - { name: "Classes", url: "classes" }
