@@ -10,9 +10,6 @@ cd "$repo_root"
 htmlproofer_ignored_urls=(
   # Business Wire closes the checker's HTTP/2 connection with an internal error.
   '/businesswire\.com/'
-  # Google returns 410 to the checker for this intentionally preserved published deck.
-  '/docs\.google\.com\/presentation/'
-
   # These MIT HKN sites present certificate chains the checker cannot validate.
   '/hkn\.mit\.edu/'
   '/hkn-tutoring2\.mit\.edu/'

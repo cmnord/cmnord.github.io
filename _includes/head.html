@@ -16,18 +16,15 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=fallback">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
-  <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-      }
-    };
-  </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
 
   <!-- Google Analytics -->
   {% include google-analytics.html %}
   <!-- Use Jekyll SEO plugin -->
   {% seo title=false %}
+  {% for tag in page.tags %}
+  <meta property="article:tag" content="{{ tag | escape }}">
+  {% endfor %}
+  {% if page.robots %}
+  <meta name="robots" content="{{ page.robots }}">
+  {% endif %}
 </head>

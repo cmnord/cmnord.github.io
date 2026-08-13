@@ -6,7 +6,7 @@ description: "My intern project for Synapse Technology (acquired) on composing m
 image:
   path: /assets/img/obj/cat-dog.jpeg
   alt: "A sleeping dog and a cat with object-detection boxes labeled DOG 80% and CAT 95%"
-tags: [ml, security, ai, startup, writing]
+tags: [software engineering, machine learning, computer vision, algorithms]
 ---
 
 Object detection is one important type of computer vision task: given an image, localize and identify the relevant objects in it.

@@ -6,7 +6,7 @@ description: "The story of how I broke my jaw, got surgery, and healed (8-week p
 image:
   path: /assets/img/jaw/1.jpeg
   alt: "A panoramic dental X-ray showing a repaired lower jaw with a metal plate and wired braces"
-tags: [health, bones, injury, broken jaw, writing]
+tags: [personal essay, health, injury, broken jaw, bones, recovery]
 ---
 
 _One 10cm plate and seven screws later._

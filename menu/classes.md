@@ -2,6 +2,7 @@
 layout: page
 title: Selected Classes
 permalink: /classes
+description: "Notable classes I took during university at MIT (mostly computer systems and Japanese)."
 ---
 
 - Distributed Systems <span class="course-number">6.824</span>

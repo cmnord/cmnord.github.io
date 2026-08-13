@@ -1,0 +1,5 @@
+# jekyll-seo-tag looks up the site-wide `author` from _config.yml here and
+# includes this URL with the author in each page's JSON-LD metadata.
+"Claire Nord":
+  name: "Claire Nord"
+  url: "https://clairenord.com/"

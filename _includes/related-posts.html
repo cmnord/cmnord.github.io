@@ -1,19 +1,32 @@
-<section class="related" aria-labelledby="related-posts-title">
-  <h2 class="related-title" id="related-posts-title">{{ site.data.settings.related_posts }}</h2>
-  {% assign listed_posts_urls = page.url | split: ' ' %}
-  <ul class="related-posts">
-    {% for tag in page.tags %}
-      {% for mypost in site.tags[tag] limit:3 %}
-        {% if listed_posts_urls contains mypost.url %}
-        {% else %}
-          <li>
-            <a href="{{ site.github.url }}{{ mypost.url }}">
-              {% include post-title.html post=mypost %}
-            </a>
-          </li>
-          {% assign listed_posts_urls = listed_posts_urls | push: mypost.url %}
-        {% endif %}
+{% comment %}
+Related posts are selected from the current post's tags, in front matter order.
+For each tag, Jekyll provides matching posts newest first. Keep the first three
+unique posts and hide the entire section when none share a tag. The markup and
+classes below preserve the existing presentation.
+{% endcomment %}
+{% assign related_posts = '' | split: '' %}
+{% assign listed_posts_urls = page.url | split: ' ' %}
+{% for tag in page.tags %}
+  {% for mypost in site.tags[tag] %}
+    {% unless listed_posts_urls contains mypost.url %}
+      {% assign related_posts = related_posts | push: mypost %}
+      {% assign listed_posts_urls = listed_posts_urls | push: mypost.url %}
+    {% endunless %}
+    {% if related_posts.size >= 3 %}{% break %}{% endif %}
+  {% endfor %}
+  {% if related_posts.size >= 3 %}{% break %}{% endif %}
+{% endfor %}
+{% if related_posts.size > 0 %}
+  <section class="related" aria-labelledby="related-posts-title">
+    <h2 class="related-title" id="related-posts-title">{{ site.data.settings.related_posts }}</h2>
+    <ul class="related-posts">
+      {% for mypost in related_posts %}
+        <li>
+          <a href="{{ site.github.url }}{{ mypost.url }}">
+            {% include post-title.html post=mypost %}
+          </a>
+        </li>
       {% endfor %}
-    {% endfor %}
-  </ul>
-</section>
+    </ul>
+  </section>
+{% endif %}
