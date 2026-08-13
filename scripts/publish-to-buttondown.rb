@@ -20,6 +20,33 @@ API_URL = URI("https://api.buttondown.com/v1/emails")
 # "Fancy" editor mode) instead of interpreting the rendered post as Markdown.
 EDITOR_MODE = "<!-- buttondown-editor-mode: fancy -->"
 OUTPUT_FORMATS = %w[html json].freeze
+ROUGE_EMAIL_DEFAULT_STYLE = "color: #f8f8f2 !important"
+
+# Buttondown's Modern template uses a dark background for code blocks. Rouge's
+# token classes need inline colors because custom newsletter CSS is not
+# available on Buttondown's free plan and Buttondown's CSS inliner otherwise
+# gives the spans the surrounding text color.
+ROUGE_EMAIL_STYLES = {
+  "color: #f8f8f2 !important" => %w[bp n ni nn nv nx p py vc vg vi vm w],
+  "color: #f8f8f2 !important; font-weight: bold" => %w[nl],
+  "color: #a6a1c4 !important; font-style: italic" => %w[c c1 cd ch cm cp cpf cs],
+  "color: #a6a1c4 !important" => %w[gl],
+  "color: #cfcfc2 !important" => %w[go],
+  "color: #66d9ef !important" => %w[gp kt no],
+  "color: #66d9ef !important; font-weight: bold" => %w[gh gu],
+  "color: #ff6188 !important" => %w[gd gr gt nt o],
+  "color: #ff6188 !important; font-weight: bold" => %w[k kd kn kp kr kv ow],
+  "color: #a9dc76 !important" => %w[gi na nb nd nf],
+  "color: #a9dc76 !important; font-weight: bold" => %w[nc ne],
+  "color: #ab9df2 !important" => %w[kc l m mb mf mh mi mo mx se],
+  "color: #e6db74 !important" => %w[dl ld s s1 s2 sa sb sc sd sh si sr ss sx],
+  "color: #f8f8f2 !important; background-color: #a71930" => %w[err],
+  "font-style: italic" => %w[ge],
+  "font-style: italic; font-weight: bold" => %w[ges],
+  "font-weight: bold" => %w[gs],
+}.each_with_object({}) do |(style, token_names), styles|
+  token_names.each { |name| styles[name] = style }
+end.freeze
 
 options = {
   output: nil,
@@ -50,13 +77,26 @@ def email_body(post, canonical_url)
   article = page.at_css("article.post-content")
   abort "Could not find the rendered post body for #{post.relative_path}." unless article
 
-  # Rouge wraps syntax-highlighted tokens in spans. Buttondown's CSS inliner
-  # colors those unknown spans black, overriding its white-on-dark code style.
-  # Unwrap only the email copy so Buttondown can style each <pre><code> block;
-  # the website keeps its full syntax highlighting.
+  # Preserve Rouge's highlighting without relying on paid custom CSS. The
+  # !important colors survive Buttondown's universal text-color rule.
   article.css("pre code span").each do |span|
-    span.children.to_a.each { |child| span.add_previous_sibling(child) }
-    span.remove
+    styles = span["class"].to_s.split.filter_map { |name| ROUGE_EMAIL_STYLES[name] }
+    styles.unshift(ROUGE_EMAIL_DEFAULT_STYLE) unless styles.any? { |style| style.include?("color:") }
+    span["style"] = styles.join("; ")
+  end
+
+  # Jekyll wraps each block in two divs that are useful on the website but can
+  # leak into Buttondown's generated plain-text part. Send simple, semantic
+  # pre/code markup instead, retaining the language on the code element.
+  article.css("div.highlighter-rouge").each do |wrapper|
+    pre = wrapper.at_css("pre")
+    code = pre&.at_css("code")
+    next unless pre && code
+
+    language = wrapper["class"].to_s.split.find { |name| name.start_with?("language-") }
+    code["class"] = [code["class"], language].compact.join(" ") if language
+    pre.remove_attribute("class")
+    wrapper.replace(pre.unlink)
   end
 
   article.css("a[href]").each do |link|
@@ -66,7 +106,14 @@ def email_body(post, canonical_url)
     image["src"] = absolute_url(canonical_url, image["src"])
   end
 
-  "#{EDITOR_MODE}\n#{article.inner_html.strip}\n"
+  source_name = URI(canonical_url).host&.delete_prefix("www.") || canonical_url
+  source_link = <<~HTML.strip
+    <p style="font-size: 13px !important; line-height: 18px !important; margin-top: 0 !important; text-align: right;">
+      <a href="#{CGI.escapeHTML(canonical_url)}">Read original on #{CGI.escapeHTML(source_name)} →</a>
+    </p>
+  HTML
+
+  "#{EDITOR_MODE}\n#{source_link}\n#{article.inner_html.strip}\n"
 end
 
 # Wraps the body in only enough markup to open it in a browser. This deliberately
