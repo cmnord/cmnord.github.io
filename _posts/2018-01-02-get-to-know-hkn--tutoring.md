@@ -9,22 +9,22 @@ image:
 tags: [education, mit, tutoring, writing]
 ---
 
-[HKN](https://hkn.mit.edu/), the Course 6 honor society at MIT, is often thought of as the club that hosts free food study breaks, the [underground guide](https://underground-guide.mit.edu) to Course 6 classes, and the occasional resume review event. However, there’s much more than free boba and Chipotle— one of the most important services HKN offers is the opportunity to tutor and be tutored.
+[HKN][hkn], the Course 6 honor society at MIT, is often thought of as the club that hosts free food study breaks, the [underground guide][underground-guide] to Course 6 classes, and the occasional resume review event. However, there’s much more than free boba and Chipotle— one of the most important services HKN offers is the opportunity to tutor and be tutored.
 
-![]({{ site.github.url }}/assets/img/tutor.jpeg)
+![Two students working together at laptops during an HKN tutoring session]({{ site.github.url }}/assets/img/tutor.jpeg)
 _HKN eligible Stef Ren ’19 reviews a student’s resume._
 
 #### What is HKN Tutoring?
 
 Tutoring is the second-largest branch of HKN after the Underground Guide, with 83 student tutors in fall 2017. Tutors for HKN submit the classes and number of hours they’re willing to tutor, and they are manually matched with tutees by the HKN tutoring officers. The tutor and tutee typically meet for an hour once a week, discussing anything from pset questions to exam practice problems to topics from lecture in more depth.
 
-The most popular classes for tutoring are large classes like 6.006, 6.046, 6.036, and 6.004. 205 students were matched with tutors this semester, which means over 20% of students in the department are involved in HKN tutoring ([source][registrar]). HKN member Justin Xiao ’17 discusses tutoring statistics in more detail [here](https://medium.com/mit-hkn/mit-hkn-tutoring-service-a303d6d6bfa5).
+The most popular classes for tutoring are large classes like 6.006, 6.046, 6.036, and 6.004. 205 students were matched with tutors this semester, which means over 20% of students in the department are involved in HKN tutoring ([source][registrar]). HKN member Justin Xiao ’17 discusses tutoring statistics in more detail [here][tutoring-statistics].
 
 #### Why request a tutor?
 
 Office hours for these large Course 6 classes tend to be very crowded, which means TAs have to focus on immediate needs like psets or exams without reviewing concepts. Unlike office hours, lectures, or group psetting, tutoring time is solely focused on *you* and your understanding of the subject. You’re paired with the same tutor all semester, so you can build a personal relationship with them beyond transactional Q&A. Your tutor knows you, and can encourage you and adapt to your learning style.
 
-Tutoring can be especially helpful for classes like 6.036, which switched to a [flipped classroom](https://en.wikipedia.org/wiki/Flipped_classroom) style for the first time this semester. HKN eligible Sooraj Boominathan ’19 notes that “[tutoring] is the first time students might be getting the subject explained to them by a real person, and not just a video.”
+Tutoring can be especially helpful for classes like 6.036, which switched to a [flipped classroom][flipped-classroom] style for the first time this semester. HKN eligible Sooraj Boominathan ’19 notes that “[tutoring] is the first time students might be getting the subject explained to them by a real person, and not just a video.”
 
 #### Why tutor for HKN?
 
@@ -36,11 +36,19 @@ If you’ve considered TAing a class, tutoring is a great lower-commitment way t
 
 #### In Summary
 
-Peer teaching is a key part of the MIT undergraduate experience! Take advantage of this opportunity and sign up to tutor or be tutored [**here**](https://hkn.scripts.mit.edu/tutoring/). Tutors are in high demand, so be sure to sign up early if you request tutoring for a popular class.
+Peer teaching is a key part of the MIT undergraduate experience! Take advantage of this opportunity and sign up to tutor or be tutored [**here**][signup]. Tutors are in high demand, so be sure to sign up early if you request tutoring for a popular class.
 
-If you want announcements for HKN events, add yourself to hkn-interest@ [here](https://groups.mit.edu/webmoira/list/hkn-interest). If you have ideas for how to improve tutoring or anything else Course 6, contact HKN at [hkn-officers@mit.edu](mailto:hkn-officers@mit.edu), or the tutoring officers in particular at [hkn-tutoring@mit.edu](mailto:hkn-tutoring@mit.edu).
+If you want announcements for HKN events, add yourself to hkn-interest@ [here][hkn-interest]. If you have ideas for how to improve tutoring or anything else Course 6, contact HKN at [hkn-officers@mit.edu][hkn-officers-email], or the tutoring officers in particular at [hkn-tutoring@mit.edu][hkn-tutoring-email].
 
 _Thanks to Nalini Singh and Noah Moroze for feedback. This blog post was cross-posted on Medium [here][medium]._
 
-[registrar]: http://web.mit.edu/registrar/stats/majors/index.html "MIT Registrar’s Office Enrollment Statistics, Fall 2017–2018"
+[hkn]: https://hkn.mit.edu/
+[underground-guide]: https://underground-guide.mit.edu
+[tutoring-statistics]: https://medium.com/mit-hkn/mit-hkn-tutoring-service-a303d6d6bfa5
+[flipped-classroom]: https://en.wikipedia.org/wiki/Flipped_classroom
+[signup]: https://hkn-tutoring2.mit.edu/
+[hkn-interest]: https://groups.mit.edu/webmoira/list/hkn-interest
+[hkn-officers-email]: mailto:hkn-officers@mit.edu
+[hkn-tutoring-email]: mailto:hkn-tutoring@mit.edu
+[registrar]: https://registrar.mit.edu/stats-reports/majors-count/2017-2018 "MIT Registrar’s Office Enrollment Statistics, Fall 2017–2018"
 [medium]: https://medium.com/mit-hkn/get-to-know-hkn-tutoring-b07267128c93

@@ -32,6 +32,7 @@ To verify a production build, run:
 
 ```sh
 JEKYLL_ENV=production mise exec -- bundle exec jekyll build --strict_front_matter
+mise exec -- ./scripts/check-html.sh
 ```
 
 ## Newsletter publishing

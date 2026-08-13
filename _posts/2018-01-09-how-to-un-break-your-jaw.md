@@ -23,12 +23,12 @@ a scrape on my chin and my ear was bleeding.
 My mom rushed me to the dentist, where they did a [panoramic dental
 x-ray][panoramic] to find that my jaw was fractured in two places.
 
-![]({{ site.github.url }}/assets/img/jaw/2.jpeg)
+![A panoramic dental X-ray showing the jaw fracture before surgery]({{ site.github.url }}/assets/img/jaw/2.jpeg)
 _The original panoramic x-ray result. The white line across my lower middle
 teeth is my [permanent retainer][permanent-retainer]!_
 {: .caption}
 
-![]({{ site.github.url }}/assets/img/jaw/3.jpeg)
+![The panoramic dental X-ray with the two fracture sites circled in red]({{ site.github.url }}/assets/img/jaw/3.jpeg)
 _The two fractures: the body fracture on my right and the condylar fracture high
 up on my left._
 {: .caption}
@@ -76,7 +76,7 @@ For the fracture on the jaw body, the doctors decided to do an “[internal
 fixation][internal-fixation]”, where they put a small titanium plate across the
 break to fixate it. The plate looks like this:
 
-![]({{ site.github.url }}/assets/img/jaw/plate.png)
+![A hand-drawn fixation plate with an arrow labeling its screw holes]({{ site.github.url }}/assets/img/jaw/plate.png)
 
 The plate goes from a bit before the corner of my jaw on the right to a little
 past the curve at the front of my chin. The plate is 10cm long (about the length
@@ -91,7 +91,7 @@ an invasive surgery and could have caused problems with articulating my jaw.
 Instead, they decided to temporarily lock my jaw shut with [arch
 bars][arch-bars] and elastic bands.
 
-![]({{ site.github.url }}/assets/img/jaw/arch-bars.jpeg)
+![Arch bars wired around the upper and lower teeth of a model jaw]({{ site.github.url }}/assets/img/jaw/arch-bars.jpeg)
 _Arch bars ([image source][arch-bar-img])_
 {: .caption}
 
@@ -111,7 +111,7 @@ extensively so I wouldn’t need to during surgery, and talked with the main [or
 surgeon][pokorny] and anesthesiologist. They gave me the KO medication through
 my IV and I was completely out for the 3–3.5hr surgery.
 
-![]({{ site.github.url }}/assets/img/jaw/1.jpeg)
+![A postoperative panoramic X-ray showing arch bars and a plate fixed to the lower jaw]({{ site.github.url }}/assets/img/jaw/1.jpeg)
 _The plate and arch bars after the surgery (same as first image)._
 {: .caption}
 
@@ -203,7 +203,7 @@ As far as swelling, Dr. Kim said that 50% of the swelling goes down in the first
 6 weeks, and the next 50% goes away in the next year. For me most of the
 swelling went away after 2.5 weeks, though.
 
-![]({{ site.github.url }}/assets/img/jaw/hackmit.jpeg)
+![Claire with two fellow HackMIT organizers wearing matching event shirts]({{ site.github.url }}/assets/img/jaw/hackmit.jpeg)
 _Me (left) struggling to smile normally at [HackMIT][hackmit] 2017 (2.5 weeks
 post-op). You can see my arch bars peeking out, and my right side is still a
 little puffy._
@@ -229,7 +229,7 @@ At this week’s doctor’s appointment I was put in lighter “guided elastics�
 let me open my mouth. I had an elastic band on each side of my mouth in the
 following positions:
 
-![]({{ site.github.url }}/assets/img/jaw/elastics.png)
+![A hand-drawn diagram numbering the five elastic positions around the teeth]({{ site.github.url }}/assets/img/jaw/elastics.png)
 _I remembered the positions as 5–2–3–4, like room 5-234 for HackMIT meetings!_
 {: .caption}
 
@@ -240,7 +240,7 @@ didn’t really get around to doing the jaw exercises 3 times a day, but I did d
 2 times (morning and night). I also stopped taking ibuprofen for pain around
 this time.
 
-![]({{ site.github.url }}/assets/img/jaw/elastics-irl.jpeg)
+![A close-up dental exam showing elastics attached to the arch bars]({{ site.github.url }}/assets/img/jaw/elastics-irl.jpeg)
 _Guiding elastics in my mouth IRL._
 {: .caption}
 
@@ -313,7 +313,7 @@ I started using my electric toothbrush and flossing too, which felt amazing
 I was so excited to have the arch bars gone!! There were 3 possible anesthesia
 methods to remove my arch bars:
 
-- Swish [lidocaine](https://en.wikipedia.org/wiki/Lidocaine) in my mouth: tastes
+- Swish [lidocaine][lidocaine] in my mouth: tastes
   bad, but it’s easy. Maybe not as numbing as the other options.
 - General anesthetic: going totally under. It’s kind of a big deal and takes a
   lot of time for how short the operation is.
@@ -327,7 +327,7 @@ She untwisted the wires, snipped them short, then pulled them around and out. I
 grimaced for a few of the pulls, but it was fairly quick and I _really_ wanted
 it all gone.
 
-![]({{ site.github.url }}/assets/img/jaw/bars-out.jpeg)
+![Claire lifting her lip to show her teeth after the arch bars were removed]({{ site.github.url }}/assets/img/jaw/bars-out.jpeg)
 _Imprint of the removed arch bar!_
 {: .caption}
 
@@ -375,19 +375,20 @@ cross-posted on Medium [here][medium]._
 [medium]: https://medium.com/@cnord/how-to-un-break-your-jaw-f6f24c269c88
 [panoramic]: https://en.wikipedia.org/wiki/Panoramic_radiograph
 [permanent-retainer]: https://en.wikipedia.org/wiki/Retainer_(orthodontics)#Fixed_retainers
-[mandibular-fractures]: https://en.wikipedia.org/wiki/Mandible#/media/File:Mandbular_fractures.png
+[mandibular-fractures]: https://commons.wikimedia.org/wiki/File:Mandbular_fractures.png
 [hospital]: https://www.beaumont.org/locations/beaumont-hospital-royal-oak
-[ct-scan]: https://en.wikipedia.org/wiki/CT_scan#Extremities
+[ct-scan]: https://en.wikipedia.org/wiki/CT_scan#Axial_skeleton_and_extremities
 [internal-fixation]: https://en.wikipedia.org/wiki/Internal_fixation
-[arch-bars]: https://www2.aofoundation.org/wps/portal/!ut/p/a0/04_Sj9CPykssy0xPLMnMz0vMAfGjzOKN_A0M3D2DDbz9_UMMDRyDXQ3dw9wMDAx8jfULsh0VAdAsNSU!/?BackMode=true&bone=CMF&contentUrl=%2Fsrg%2Fpopup%2Fadditional_material%2F91%2FX10_MMF.jsp&popupStyle=diagnosis&segment=Mandible&soloState=true#JumpLabelNr4
-[arch-bar-img]: https://www2.aofoundation.org/wps/portal/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOKN_A0M3D2DDbz9_UMMDRyDXQ3dw9wMDAx8jYEKIvEocDQnTr8BDuBoQEi_l35Uek5-EtipkY55ScYW6fpRRalpqUWpRXqlRUDhjJKSgmIrVQNVg_Lycr30_Pz0nFS95PxcVQNsWjLyi0v0I1BV6hfkhkZU-aSGAwDYYmkN/dl5/d5/L2dJQSEvUUt3QS80SmlFL1o2XzJPMDBHSVMwS09PVDEwQVNFMUdWRjAwME0z/?ActiveNumber=1&StepPos=65&contentUrl=%2Fsrg%2Fpopup%2Fadditional_material%2F91%2FX10_MMF.enl.jsp&soloState=true
-[pokorny]: https://doctors.beaumont.org/provider/Aaron+Pokorny/227215#provider-details-experience
+[arch-bars]: https://surgeryreference.aofoundation.org/cmf/basic-technique/maxillomandibular-fixation-mmf
+[arch-bar-img]: https://media.aofoundation.org/-/jssmedia/surgery/91/91_x010_i180.png?w=665
+[pokorny]: https://doctors.beaumont.org/provider/Aaron+Pokorny/227215
 [ensure]: https://ensure.com/
 [premier-protein]: https://www.premierprotein.com/
-[mgh]: http://www.massgeneral.org/
+[mgh]: https://www.massgeneral.org/
 [hackmit]: https://hackmit.org
 [skeletonized]: https://medical-dictionary.thefreedictionary.com/skeletonize
 [waterpik]: https://www.waterpik.com/oral-health/products/dental-water-flosser/
-[tootsie-roll]: https://en.wikipedia.org/wiki/Tootsie_Roll#Alternate_flavors
+[tootsie-roll]: https://en.wikipedia.org/wiki/Tootsie_Roll#Alternative_flavors
 [soylent]: https://www.soylent.com/
 [orthodontic-wax]: https://www.wikihow.com/Apply-Dental-Wax-on-Braces
+[lidocaine]: https://en.wikipedia.org/wiki/Lidocaine
