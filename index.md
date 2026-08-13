@@ -4,8 +4,8 @@ title: Home
 permalink: /
 ---
 
-:stars: [Jynnie][jynnie], [Manuel][manuel], and I are starting something new in the Y Combinator
-spring 2026 batch.
+:stars: [Jynnie][jynnie], [Manuel][manuel], and I are starting something new.
+We founded [Napkin Math][napkin-math] in the [YC Spring 2026 batch][yc].
 
 :apple: I previously worked on Operating Systems security at [Apple][apple].
 Before that, I worked on performance infrastructure and the alerts platform at
@@ -47,6 +47,8 @@ systems with the MIT Lincoln Lab [Resilient Mission Computer][rmc] group.
 
 [jynnie]: https://jynnie.me
 [manuel]: https://www.linkedin.com/in/manuelccastro/
+[napkin-math]: https://napkinmath.club
+[yc]: https://www.ycombinator.com/companies/napkin-math
 [apple]: https://support.apple.com/guide/security/welcome/web
 [samsara]: https://samsara.com
 [aclima]: https://aclima.io/

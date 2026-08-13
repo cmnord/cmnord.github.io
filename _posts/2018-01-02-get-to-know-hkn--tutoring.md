@@ -6,7 +6,7 @@ description: "About MIT HKN's tutoring program"
 image:
   path: /assets/img/tutor.jpeg
   alt: "Two students working together at laptops during an HKN tutoring session"
-tags: [education, mit, tutoring, writing]
+tags: [MIT, education, tutoring]
 ---
 
 [HKN][hkn], the Course 6 honor society at MIT, is often thought of as the club that hosts free food study breaks, the [underground guide][underground-guide] to Course 6 classes, and the occasional resume review event. However, there’s much more than free boba and Chipotle— one of the most important services HKN offers is the opportunity to tutor and be tutored.

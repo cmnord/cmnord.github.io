@@ -24,6 +24,16 @@ description: "Claire's personal website"
 author: "Claire Nord"
 url: "https://clairenord.com"
 
+# On the homepage, jekyll-seo-tag writes these official profiles to the
+# JSON-LD `sameAs` property. They help identify which Claire Nord this site
+# represents; their order does not indicate importance.
+social:
+  name: "Claire Nord"
+  links:
+    - "https://github.com/cmnord"
+    - "https://linkedin.com/in/cmnord"
+    - "https://scholar.google.com/citations?user=FdBYqlcAAAAJ&hl=en"
+
 buttondown_username: "cnord"
 
 # https://github.com/github/pages-gem/issues/399

@@ -6,7 +6,7 @@ description: "Learn from my mistakes and set up Tizen Studio to make your first 
 image:
   path: /assets/img/watch/goal.jpeg
   alt: "A Samsung Gear S3 on a wrist displaying Hello D-Lab and the time"
-tags: [samsung, samsung gear s3, smartwatch, writing]
+tags: [software engineering, tizen, samsung, samsung gear s3, smartwatch, wearables, tutorial]
 ---
 
 <!-- HTMLProofer: preserve this historical URL; its HTTP site works but its HTTPS endpoint does not. -->

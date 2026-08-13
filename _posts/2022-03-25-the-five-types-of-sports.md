@@ -6,7 +6,7 @@ description: "Measure 📏 Precision 🎯 Spectacle 💃 Combat 🤼 Play 🛶"
 image:
   path: /assets/img/sports.png
   alt: "A binder page filled with colorful Saweetie-themed sports trading cards"
-tags: [sports, fun, essay, writing]
+tags: [personal essay, sports, taxonomy]
 ---
 
 All sports can be grouped into five categories by their rules. These rules set
