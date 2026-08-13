@@ -19,10 +19,12 @@ htmlproofer_ignored_urls=(
   '/underground-guide\.mit\.edu/'
 
   # These domains reject automated link checks with status 403.
+  '/beaumont\.org/'
   '/medium\.com/'
   '/medical-dictionary\.thefreedictionary\.com/'
   '/scholar\.google\.com/'
   '/stackoverflow\.com/'
+  '/tizen\.org/'
 
   # LinkedIn rejects automated link checks with status 999.
   '/linkedin\.com/'
