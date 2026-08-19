@@ -9,9 +9,22 @@
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+  <script>
+    (function () {
+      var stored = localStorage.getItem("theme");
+      var theme =
+        stored === "light" || stored === "dark"
+          ? stored
+          : window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
   <link rel="icon" type="image/x-icon" href="{{ site.github.url }}/favicon.ico">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ build_version }}">
   <script src="{{ '/assets/js/code-wrap.js' | relative_url | bust_file_cache }}" defer></script>
+  <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}" defer></script>
   {% feed_meta %}
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=fallback">
