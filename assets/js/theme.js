@@ -19,8 +19,11 @@ function syncToggle(button, theme) {
   const dark = theme === "dark";
   const icon = button.querySelector("i");
 
+  const label = dark ? "Switch to light theme" : "Switch to dark theme";
+
   button.setAttribute("aria-pressed", dark.toString());
-  button.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
+  button.setAttribute("aria-label", label);
+  button.setAttribute("title", label);
   if (icon) icon.className = dark ? "fa-solid fa-sun" : "fa-solid fa-moon";
 }
 
