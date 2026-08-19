@@ -46,7 +46,8 @@
 @media (prefers-reduced-motion: reduce) {
   .social-icons a i,
   .sharing-icons a i,
-  .sharing-icons button i {
+  .sharing-icons button i,
+  .theme-toggle i {
     transition: none;
   }
 
@@ -55,7 +56,9 @@
   .sharing-icons a:hover i,
   .sharing-icons a:focus-visible i,
   .sharing-icons button:hover i,
-  .sharing-icons button:focus-visible i {
+  .sharing-icons button:focus-visible i,
+  .theme-toggle:hover i,
+  .theme-toggle:focus-visible i {
     transform: none;
   }
 }
@@ -121,4 +124,18 @@
 /* https://www.schemecolor.com/apple-podcasts-app-icon-2017-colors.php */
 .fa-podcast {
   --icon-color: #872ec4;
+}
+
+html[data-theme="dark"] .fa-github,
+html[data-theme="dark"] .fa-x-twitter,
+html[data-theme="dark"] .fa-codepen {
+  --icon-color: #ededed;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .fa-github,
+  :root:not([data-theme="light"]) .fa-x-twitter,
+  :root:not([data-theme="light"]) .fa-codepen {
+    --icon-color: #ededed;
+  }
 }

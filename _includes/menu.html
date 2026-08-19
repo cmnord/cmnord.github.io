@@ -11,7 +11,12 @@
       <a href="{{ site.github.url }}{{ item_url }}"{% if is_current %} class="is-current" aria-current="page"{% endif %}>{{ item.name }}</a>
     {% endfor %}
   </nav>
-  <nav class="social-icons" aria-label="Social links">
-    {% include social-icons.html %}
-  </nav>
+  <div class="menu-actions">
+    <nav class="social-icons" aria-label="Social links">
+      {% include social-icons.html %}
+    </nav>
+    <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme">
+      <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    </button>
+  </div>
 </div>
