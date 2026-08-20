@@ -91,8 +91,8 @@ an invasive surgery and could have caused problems with articulating my jaw.
 Instead, they decided to temporarily lock my jaw shut with [arch
 bars][arch-bars] and elastic bands.
 
-![Arch bars wired around the upper and lower teeth of a model jaw]({{ site.github.url }}/assets/img/jaw/arch-bars.jpeg)
-_Arch bars ([image source][arch-bar-img])_
+![Arch bars wired around the upper and lower teeth of a model jaw][arch-bar-img]
+_Arch bars (source: [AO Foundation][arch-bar-img])_
 {: .caption}
 
 Arch bars are like a row of braces above your teeth with little metal hooks like
@@ -372,23 +372,23 @@ reading about my experience.
 _Thanks to Noah Moroze and Kimberli Zhong for feedback. This blog post was
 cross-posted on Medium [here][medium]._
 
+[arch-bar-img]: https://media.aofoundation.org/-/jssmedia/surgery/91/91_x010_i180.png?w=665
+[arch-bars]: https://surgeryreference.aofoundation.org/cmf/basic-technique/maxillomandibular-fixation-mmf
+[ct-scan]: https://en.wikipedia.org/wiki/CT_scan#Axial_skeleton_and_extremities
+[ensure]: https://ensure.com/
+[hackmit]: https://hackmit.org
+[hospital]: https://www.beaumont.org/locations/beaumont-hospital-royal-oak
+[internal-fixation]: https://en.wikipedia.org/wiki/Internal_fixation
+[lidocaine]: https://en.wikipedia.org/wiki/Lidocaine
+[mandibular-fractures]: https://commons.wikimedia.org/wiki/File:Mandbular_fractures.png
 [medium]: https://medium.com/@cnord/how-to-un-break-your-jaw-f6f24c269c88
+[mgh]: https://www.massgeneral.org/
+[orthodontic-wax]: https://www.wikihow.com/Apply-Dental-Wax-on-Braces
 [panoramic]: https://en.wikipedia.org/wiki/Panoramic_radiograph
 [permanent-retainer]: https://en.wikipedia.org/wiki/Retainer_(orthodontics)#Fixed_retainers
-[mandibular-fractures]: https://commons.wikimedia.org/wiki/File:Mandbular_fractures.png
-[hospital]: https://www.beaumont.org/locations/beaumont-hospital-royal-oak
-[ct-scan]: https://en.wikipedia.org/wiki/CT_scan#Axial_skeleton_and_extremities
-[internal-fixation]: https://en.wikipedia.org/wiki/Internal_fixation
-[arch-bars]: https://surgeryreference.aofoundation.org/cmf/basic-technique/maxillomandibular-fixation-mmf
-[arch-bar-img]: https://media.aofoundation.org/-/jssmedia/surgery/91/91_x010_i180.png?w=665
 [pokorny]: https://doctors.beaumont.org/provider/Aaron+Pokorny/227215
-[ensure]: https://ensure.com/
 [premier-protein]: https://www.premierprotein.com/
-[mgh]: https://www.massgeneral.org/
-[hackmit]: https://hackmit.org
 [skeletonized]: https://medical-dictionary.thefreedictionary.com/skeletonize
-[waterpik]: https://www.waterpik.com/oral-health/products/dental-water-flosser/
-[tootsie-roll]: https://en.wikipedia.org/wiki/Tootsie_Roll#Alternative_flavors
 [soylent]: https://www.soylent.com/
-[orthodontic-wax]: https://www.wikihow.com/Apply-Dental-Wax-on-Braces
-[lidocaine]: https://en.wikipedia.org/wiki/Lidocaine
+[tootsie-roll]: https://en.wikipedia.org/wiki/Tootsie_Roll#Alternative_flavors
+[waterpik]: https://www.waterpik.com/oral-health/products/dental-water-flosser/

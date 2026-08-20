@@ -31,14 +31,14 @@ _[MIT M.Eng thesis, 2020][dspace]_
 
 _* indicates equal contribution._
 
-[tortis-teaser]: {{site.github.url}}/assets/video/RTSS2021-TORTIS-teaser.mp4
-[gscholar]: https://scholar.google.com/citations?user=FdBYqlcAAAAJ&hl=en
-[tortis-pdf]: https://www.cs.unc.edu/~anderson/papers/rtss21a.pdf
-[tortis-doi]: https://doi.org/10.1109/RTSS52674.2021.00049
-[rtss]: https://2021.rtss.org/
 [dspace]: https://dspace.mit.edu/handle/1721.1/129216
+[gscholar]: https://scholar.google.com/citations?user=FdBYqlcAAAAJ&hl=en
+[rtss]: https://2021.rtss.org/
+[thesis-award]: https://www.eecs.mit.edu/2021-eecs-awards/
 [thesis-pdf]: https://web.mit.edu/ha22286/www/papers/MEng20_2.pdf
 [tortis-artifact]: https://github.com/scaspin/RTSS21-Artifact
 [tortis-code]: https://github.com/mit-ll/TORTIS
+[tortis-doi]: https://doi.org/10.1109/RTSS52674.2021.00049
+[tortis-pdf]: https://www.cs.unc.edu/~anderson/papers/rtss21a.pdf
 [tortis-talk]: {{site.github.url}}/assets/video/RTSS2021-TORTIS-talk.mp4
-[thesis-award]: https://www.eecs.mit.edu/2021-eecs-awards/
+[tortis-teaser]: {{site.github.url}}/assets/video/RTSS2021-TORTIS-teaser.mp4

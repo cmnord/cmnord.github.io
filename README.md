@@ -26,6 +26,7 @@ To format, run `mise exec -- oxfmt .`. To run the same check CI runs:
 
 ```sh
 mise exec -- oxfmt --check .
+mise exec -- bundle exec ruby scripts/check-link-definition-order.rb
 ```
 
 To verify a production build, run:
@@ -56,11 +57,11 @@ request using a SHA-256 idempotency key derived from the post's canonical URL.
 
 Open sourced under the [MIT license][license].
 
-[lagrange]: https://github.com/LeNPaul/Lagrange
-[noah]: http://noahmoroze.com
-[mfsite]: http://motherfuckingwebsite.com/
 [bettermfsite]: http://bettermotherfuckingwebsite.com/
-[m2j]: https://github.com/Donohue/medium-to-jekyll
-[mise]: https://mise.jdx.dev/
-[oxfmt]: https://github.com/oxc-project/oxc
+[lagrange]: https://github.com/LeNPaul/Lagrange
 [license]: https://github.com/cmnord/cmnord.github.io/blob/main/LICENSE.md
+[m2j]: https://github.com/Donohue/medium-to-jekyll
+[mfsite]: http://motherfuckingwebsite.com/
+[mise]: https://mise.jdx.dev/
+[noah]: http://noahmoroze.com
+[oxfmt]: https://github.com/oxc-project/oxc

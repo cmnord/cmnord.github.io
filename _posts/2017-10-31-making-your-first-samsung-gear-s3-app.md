@@ -68,17 +68,17 @@ Feel free to email me (cnord@school) if you have any questions, comments, or tip
 _This blog post was cross-posted on Medium [here][medium]._
 
 [d-lab]: https://d-lab.mit.edu/research-about
-[mtl]: http://www.mobiletechnologylab.org/
 [gear-s3]: https://www.samsung.com/us/explore/gear-s3/
-[tizen]: https://www.tizen.org/?langswitch=en
-[tizen-tutorial]: https://developer.samsung.com/galaxy-watch-tizen/creating-your-first-app/native.html#run
-[tizen-tutorial-create]: https://developer.samsung.com/galaxy-watch-tizen/creating-your-first-app/native.html#create
-[tizen-tutorial-configuration]: https://developer.samsung.com/galaxy-watch-tizen/creating-your-first-app/native.html#configuration
-[tizen-tutorial-build]: https://developer.samsung.com/galaxy-watch-tizen/creating-your-first-app/native.html#build
-[tizen-tutorial-target]: https://developer.samsung.com/galaxy-watch-tizen/creating-your-first-app/native.html#target
-[tizen-developers]: https://developer.tizen.org/?langswitch=en
-[tizen-studio]: https://developer.tizen.org/development/tizen-studio/download
-[ide]: https://en.wikipedia.org/wiki/Integrated_development_environment
 [haxm]: https://software.intel.com/en-us/articles/intel-hardware-accelerated-execution-manager-intel-haxm
 [haxm-instructions]: https://stackoverflow.com/questions/26455759/installing-haxm-on-osx-yosemite
+[ide]: https://en.wikipedia.org/wiki/Integrated_development_environment
 [medium]: https://medium.com/@cnord/making-your-first-samsung-gear-s3-app-363947cdf7fd
+[mtl]: http://www.mobiletechnologylab.org/
+[tizen]: https://www.tizen.org/?langswitch=en
+[tizen-developers]: https://developer.tizen.org/?langswitch=en
+[tizen-studio]: https://developer.tizen.org/development/tizen-studio/download
+[tizen-tutorial]: https://developer.samsung.com/galaxy-watch-tizen/creating-your-first-app/native.html#run
+[tizen-tutorial-build]: https://developer.samsung.com/galaxy-watch-tizen/creating-your-first-app/native.html#build
+[tizen-tutorial-configuration]: https://developer.samsung.com/galaxy-watch-tizen/creating-your-first-app/native.html#configuration
+[tizen-tutorial-create]: https://developer.samsung.com/galaxy-watch-tizen/creating-your-first-app/native.html#create
+[tizen-tutorial-target]: https://developer.samsung.com/galaxy-watch-tizen/creating-your-first-app/native.html#target

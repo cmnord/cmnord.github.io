@@ -31,6 +31,8 @@ jobs:
         with:
           ruby-version: mise.toml
           bundler-cache: true
+      - name: Check Markdown link definition order
+        run: bundle exec ruby scripts/check-link-definition-order.rb
       - name: Build with Jekyll
         run: bundle exec jekyll build --strict_front_matter
         env:

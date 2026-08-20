@@ -45,11 +45,11 @@ systems with the MIT Lincoln Lab [Resilient Mission Computer][rmc] group.
 </section>
 {% endif %}
 
+[aclima]: https://aclima.io/
+[apple]: https://support.apple.com/guide/security/welcome/web
 [jynnie]: https://jynnie.me
 [manuel]: https://www.linkedin.com/in/manuelccastro/
 [napkin-math]: https://napkinmath.club
-[yc]: https://www.ycombinator.com/companies/napkin-math
-[apple]: https://support.apple.com/guide/security/welcome/web
-[samsara]: https://samsara.com
-[aclima]: https://aclima.io/
 [rmc]: https://www.ll.mit.edu/r-d/projects/resilient-mission-computer
+[samsara]: https://samsara.com
+[yc]: https://www.ycombinator.com/companies/napkin-math

@@ -116,7 +116,7 @@ category? Do you have a better definition for any category?
 
 _Header image source: [Fast (Motion)][fast-motion-wiki] + my edits_
 
+[fast-motion-wiki]: https://en.wikipedia.org/wiki/Fast_(Motion)
 [fishing-rules]: https://www.cwoutfitting.com/fishing-tournament-rules.htm
 [skating-rules]: https://www.usfigureskating.org/about/scoring-system
 [top-sports]: https://www.worldatlas.com/articles/what-are-the-most-popular-sports-in-the-world.html
-[fast-motion-wiki]: https://en.wikipedia.org/wiki/Fast_(Motion)
