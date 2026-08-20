@@ -152,8 +152,8 @@ We're thinking along similar lines!
 [^pre-ai]: Pre-AI.
 [^chicken-farm]: Or [chicken farm][conductor-farm] on my phone
 
-[alon]: https://x.com/alonzuman
 [ai-discipline]: https://charity.wtf/p/ai-demands-more-engineering-discipline
+[alon]: https://x.com/alonzuman
 [ar-vs-hr]: https://x.com/jynniit/status/2089860109707125033
 [bet-on-rollback]: https://rootly.com/blog/stop-trying-to-review-ais-code-faster-bet-on-rollbacks-instead
 [chiang-newyorker]: https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web
