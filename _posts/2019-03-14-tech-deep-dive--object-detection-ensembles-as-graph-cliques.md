@@ -138,11 +138,11 @@ _Some cool detections we’ve made at Synapse Technology, including handguns, gu
 
 _Thanks to Noah Moroze, Simanta Gautam, Bruno B. Ferrari Faviero, Ian Cinnamon, and Sanjeevani Lakshmivarahan for feeback. This blog post was cross-posted on Medium [here][medium]._
 
-[ancaro-project]: https://unsplash.com/photos/6VQlKJp2vpo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-[unsplash]: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-[cognitive-fatigue]: https://medium.com/synapse-blog/tsa-missed-at-least-three-firearms-in-2018-why-theyll-keep-missing-threats-in-2019-5176ea0773bf
-[ai-performance]: https://medium.com/synapse-blog/ai-outperforms-certified-xray-operators-972932086f2e
-[intersection-over-union]: https://en.wikipedia.org/wiki/Jaccard_index
-[synapse]: https://www.forbes.com/profile/synapse-technology-corporation/
-[medium]: https://medium.com/synapse-blog/tech-deep-dive-object-detection-ensembles-as-graph-cliques-a7f7d33b5477
 [acquisition]: https://www.businesswire.com/news/home/20200610005917/en/Rapiscan-Continues-Innovation-Leadership-with-Acquisition-of-Advanced-Artificial-Intelligence-AI-Technology
+[ai-performance]: https://medium.com/synapse-blog/ai-outperforms-certified-xray-operators-972932086f2e
+[ancaro-project]: https://unsplash.com/photos/6VQlKJp2vpo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+[cognitive-fatigue]: https://medium.com/synapse-blog/tsa-missed-at-least-three-firearms-in-2018-why-theyll-keep-missing-threats-in-2019-5176ea0773bf
+[intersection-over-union]: https://en.wikipedia.org/wiki/Jaccard_index
+[medium]: https://medium.com/synapse-blog/tech-deep-dive-object-detection-ensembles-as-graph-cliques-a7f7d33b5477
+[synapse]: https://www.forbes.com/profile/synapse-technology-corporation/
+[unsplash]: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText

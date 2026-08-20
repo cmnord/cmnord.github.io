@@ -42,13 +42,13 @@ If you want announcements for HKN events, add yourself to hkn-interest@ [here][h
 
 _Thanks to Nalini Singh and Noah Moroze for feedback. This blog post was cross-posted on Medium [here][medium]._
 
-[hkn]: https://hkn.mit.edu/
-[underground-guide]: https://underground-guide.mit.edu
-[tutoring-statistics]: https://medium.com/mit-hkn/mit-hkn-tutoring-service-a303d6d6bfa5
 [flipped-classroom]: https://en.wikipedia.org/wiki/Flipped_classroom
-[signup]: https://hkn-tutoring2.mit.edu/
+[hkn]: https://hkn.mit.edu/
 [hkn-interest]: https://groups.mit.edu/webmoira/list/hkn-interest
 [hkn-officers-email]: mailto:hkn-officers@mit.edu
 [hkn-tutoring-email]: mailto:hkn-tutoring@mit.edu
-[registrar]: https://registrar.mit.edu/stats-reports/majors-count/2017-2018 "MIT Registrar’s Office Enrollment Statistics, Fall 2017–2018"
 [medium]: https://medium.com/mit-hkn/get-to-know-hkn-tutoring-b07267128c93
+[registrar]: https://registrar.mit.edu/stats-reports/majors-count/2017-2018 "MIT Registrar’s Office Enrollment Statistics, Fall 2017–2018"
+[signup]: https://hkn-tutoring2.mit.edu/
+[tutoring-statistics]: https://medium.com/mit-hkn/mit-hkn-tutoring-service-a303d6d6bfa5
+[underground-guide]: https://underground-guide.mit.edu
