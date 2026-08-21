@@ -3,17 +3,15 @@ layout:	post
 title:	"Making Your First Samsung Gear S3 App"
 date:	2017-10-31
 description: "Learn from my mistakes and set up Tizen Studio to make your first Gear app"
-image:
-  path: /assets/img/watch/goal.jpeg
-  alt: "A Samsung Gear S3 on a wrist displaying Hello D-Lab and the time"
 tags: [software engineering, tizen, samsung, samsung gear s3, smartwatch, wearables, tutorial]
 ---
 
 <!-- HTMLProofer: preserve this historical URL; its HTTP site works but its HTTPS endpoint does not. -->
 When I started my research project in the MIT [D-Lab][d-lab] [Mobile Technology Lab][mtl]{: data-proofer-ignore="" } I was excited to build my first smartwatch app using the [Samsung Gear S3][gear-s3]. Despite being super excited about the project, setting up the development environment took me an entire month :anguished: Here’s how to get to the Hello World stage 10x faster than I did.
 
-![A Samsung Gear S3 displaying “Hello D-Lab!” and the time]({{ site.github.url }}/assets/img/watch/goal.jpeg)
+![A Samsung Gear S3 displaying “Hello D-Lab!” and the time]({{ site.github.url }}/assets/img/watch/goal.jpeg){: .hero-image}
 _The goal for this tutorial._
+{: .caption}
 
 The Samsung Gear S3 uses an open-source operating system called [Tizen][tizen] that’s based on the Linux kernel. You can program apps for the watch in C (“Native”) or with HTML/CSS/JS (“Web”). My project needs fast real-time signal processing, so we chose Native.
 
@@ -34,6 +32,7 @@ The emulator is basically a little watch that runs on your computer. It takes a 
 
 ![A Tizen wearable emulator running inside Tizen Studio]({{ site.github.url }}/assets/img/watch/emu.png)
 _This is a good sign._
+{: .caption}
 
 Start the emulator from the Tizen Emulator Manager window. You know it’s ready when it shows up in the Tizen Studio Connection Explorer window. If you have issues running the emulator on OSX, you may need to install [Intel HAXM][haxm] and follow [these instructions][haxm-instructions] to install it. TL;DR: run `sudo kextload -bundle-id com.intel.kext.intelhaxmand` then restart Tizen Studio. After this, you need to set up security certificates.
 
@@ -43,11 +42,13 @@ This is the mistake that took me the most time to figure out, and it is complete
 
 ![Tizen Certificate Manager with the Samsung certificate profile selected]({{ site.github.url }}/assets/img/watch/cert.png)
 _You need the one on the right too!!_
+{: .caption}
 
 It should be fairly straightforward to follow the steps to set up both certificates from there. You can follow the rest of the Tizen Developers tutorial to run the app on the watch emulator with the Tizen certificate profile.
 
 ![The completed Hello D-Lab watch face running in the emulator]({{ site.github.url }}/assets/img/watch/huzzah.png)
 _Huzzah!_
+{: .caption}
 
 ### Running on the real watch
 

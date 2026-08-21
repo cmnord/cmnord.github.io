@@ -3,14 +3,8 @@ layout: post
 title: "How to Un-Break Your Jaw"
 date: 2018-01-09
 description: "The story of how I broke my jaw, got surgery, and healed (8-week process)"
-image:
-  path: /assets/img/jaw/1.jpeg
-  alt: "A panoramic dental X-ray showing a repaired lower jaw with a metal plate and wired braces"
 tags: [personal essay, health, injury, broken jaw, bones, recovery]
 ---
-
-_One 10cm plate and seven screws later._
-{: .caption}
 
 **TL;DR: sleep is important**
 
@@ -111,8 +105,8 @@ extensively so I wouldn’t need to during surgery, and talked with the main [or
 surgeon][pokorny] and anesthesiologist. They gave me the KO medication through
 my IV and I was completely out for the 3–3.5hr surgery.
 
-![A postoperative panoramic X-ray showing arch bars and a plate fixed to the lower jaw]({{ site.github.url }}/assets/img/jaw/1.jpeg)
-_The plate and arch bars after the surgery (same as first image)._
+![A postoperative panoramic X-ray showing arch bars and a plate fixed to the lower jaw]({{ site.github.url }}/assets/img/jaw/1.jpeg){: .hero-image}
+_The plate and arch bars after the surgery._
 {: .caption}
 
 ### Immediately Post-Op

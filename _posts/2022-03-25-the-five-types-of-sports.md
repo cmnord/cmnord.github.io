@@ -3,15 +3,16 @@ layout:	post
 title:	"The Five Types of Sports"
 date:	2022-03-25
 description: "Measure 📏 Precision 🎯 Spectacle 💃 Combat 🤼 Play 🛶"
-image:
-  path: /assets/img/sports.png
-  alt: "A binder page filled with colorful Saweetie-themed sports trading cards"
 tags: [personal essay, sports, taxonomy]
 ---
 
 All sports can be grouped into five categories by their rules. These rules set
 constraints which lead to similar emergent behaviors and strategies in each
 category.
+
+![Saweetie's Fast (Motion) cover art edited with CV bounding boxes]({{ site.github.url }}/assets/img/sports.png){: .hero-image}
+_Source: [Fast (Motion)][fast-motion-wiki] album cover + my edits_
+{: .caption}
 
 ## What is a sport?
 
@@ -113,8 +114,6 @@ volleyball, ping pong, baseball, rugby
 This blog post was a fun thought exercise for me, but I’m curious what others
 think. Would you categorize anything differently? Would you propose a new
 category? Do you have a better definition for any category?
-
-_Header image source: [Fast (Motion)][fast-motion-wiki] + my edits_
 
 [fast-motion-wiki]: https://en.wikipedia.org/wiki/Fast_(Motion)
 [fishing-rules]: https://www.cwoutfitting.com/fishing-tournament-rules.htm
