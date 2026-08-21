@@ -2,7 +2,6 @@
 layout: post
 title: "Do we have AI SRE yet?"
 date: 2026-08-20
-published: false
 description: "I miss being an SRE in the Old Days. Here's how we do release management with agents now"
 tags: [coding agents, site reliability engineering, release management, software engineering]
 ---
