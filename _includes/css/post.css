@@ -26,10 +26,6 @@
   overflow-wrap: anywhere;
 }
 
-.post-header-divider {
-  margin: 32px 0;
-}
-
 .post-content > :first-child {
   margin-top: 0;
 }

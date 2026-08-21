@@ -3,16 +3,14 @@ layout:	post
 title:	"Tech Deep-Dive: Object Detection Ensembles as Graph Cliques"
 date:	2019-03-14
 description: "My intern project for Synapse Technology (acquired) on composing multiple CV models for better output"
-image:
-  path: /assets/img/obj/cat-dog.jpeg
-  alt: "A sleeping dog and a cat with object-detection boxes labeled DOG 80% and CAT 95%"
 tags: [software engineering, machine learning, computer vision, algorithms]
 ---
 
 Object detection is one important type of computer vision task: given an image, localize and identify the relevant objects in it.
 
-![A sleeping dog and cat enclosed by object-detection boxes labeled DOG 80% and CAT 95%]({{ site.github.url }}/assets/img/obj/cat-dog.jpeg)
+![A sleeping dog and cat enclosed by object-detection boxes labeled DOG 80% and CAT 95%]({{ site.github.url }}/assets/img/obj/cat-dog.jpeg){: .hero-image}
 _Photo by [Ancaro Project][ancaro-project] on [Unsplash][unsplash]_
+{: .caption}
 
 Object detection algorithms can solve problems difficult for humans, like identifying vehicle models from satellite images, counting the number of people in a crowd, or rejecting unripe fruits from a conveyor belt of fresh produce. The last example is what’s known as a sporadic visual search problem, where a huge stream of repetitive data contains anomalies only infrequently and sporadically. Humans struggle with these types of problems due to [cognitive fatigue.][cognitive-fatigue] Object detection algorithms, however, [excel at this][ai-performance].
 
@@ -20,16 +18,19 @@ A perfect example of the sporadic visual search problem is X-ray baggage screeni
 
 ![Visitors passing through an X-ray security checkpoint outside a museum]({{ site.github.url }}/assets/img/obj/museum.jpeg)
 _An X-ray scanner at the entrance to the Louvre museum._
+{: .caption}
 
 At Synapse Technology, we use an object detection model to tackle this problem. A *model* in this context is an algorithm trained on a large number of labeled examples to solve a task. Let’s train an object detection model, then run it against each X-ray image the bag screener inspects.
 
 ![An X-ray of a suitcase with a clearly visible knife detected at 99 percent confidence]({{ site.github.url }}/assets/img/obj/ez-knife.png)
 _A straightforward example: the knife stands out in this bag._
+{: .caption}
 
 Detection can get much more difficult, though, depending on the bag contents and arrangement.
 
 ![A cluttered suitcase X-ray containing a partially obscured knife]({{ site.github.url }}/assets/img/obj/hard-knife-blank.png)
 _This bag contains a knife. Can you spot it?_
+{: .caption}
 
 It’s hard to tell whether this bag contains a threat, even with a very good object detection model. That’s why we use multiple models in *ensemble* to do our detections. If two models both detect the same object, there’s a much higher chance that something is actually there. Using multiple models can also improve detection rate and lower false alarms by making the whole system more robust towards uncertain/difficult cases. Ensemble detection also allows us to compare different model architectures against each other to continuously improve our product. Finally, it allows us to scale the number of threat classes we support: each model supports some set of threats, and ensemble detection makes it easy to incorporate a new model’s set of threats into the ensemble.
 
@@ -43,6 +44,7 @@ Suppose we have two object detection models, Model A and Model B. Each of them h
 
 ![The cluttered suitcase X-ray with two overlapping knife detections at 40 and 50 percent confidence]({{ site.github.url }}/assets/img/obj/hard-knife-label.png)
 _The two different models have detected a threat. Note that is the same image as the previous one._
+{: .caption}
 
 Model A (red) and Model B (yellow) have both detected a knife in the top right corner of the image, but neither model has a high enough confidence score alone for us to conclude that there is a threat in the image. If we consider the models as an *ensemble*, though, we observe that since two of their detections overlap, they probably refer to the same object. Given that they refer to the same object, there is a much greater probability that something is actually there. For example, if the confidence scores are the probability that each detection is a true positive (rather than a false positive), then the probability that the *ensemble* is a true detection is 0.7, which is greater than either detection alone (see calculations below).
 
@@ -72,6 +74,7 @@ Let’s consider a hypothetical example with the same two models, but more infer
 
 ![Four overlapping knife detections from two object-detection models]({{ site.github.url }}/assets/img/obj/ex-1.jpeg)
 _Model A and Model B have detected more objects in this hypothetical image. Some of these perceived objects overlap._
+{: .caption}
 
 In this case, we can’t just group overlapping inferences as one “ground truth object” like in the first example because two of Model B’s inferences overlap. Model B thinks that there are *two* different overlapping objects in the lower half of the image, but Model A thinks that there is one. How do we group them? What if there were even more inferences than this? Let’s model this as a graph problem.
 
@@ -81,6 +84,7 @@ Create a vertex for each inference. Let the vertex’s *color* indicate the mode
 
 ![A graph connecting nearby centers of the four overlapping detections]({{ site.github.url }}/assets/img/obj/ex-2.jpeg)
 _A graph representation of our inferences, where weighted edges join nodes whose bounding boxes intersect._
+{: .caption}
 
 Now we have a weighted undirected graph. Our goal is to partition each disjoint subgraph into *cliques* such that no two vertices in a clique share the same color. We also want the cliques to have the maximum sum of edge weights (be as overlapping as possible). We take a greedy approach to this. First, we create a clique for each vertex. Then, we sort the edges by edge weight (IoU score). In descending order of edge weight, merge the two cliques the edges would connect if their sets of vertex colors are disjoint. A pseudocode implementation of this is below.
 
@@ -113,6 +117,7 @@ return set(vertex_to_clique_map.values())
 
 ![The detection graph grouped into three possible cliques]({{ site.github.url }}/assets/img/obj/ex-3.jpeg)
 _We’ve grouped the detections into three cliques. The clique on the left contains two inferences._
+{: .caption}
 
 #### Voting on cliques
 
@@ -122,6 +127,7 @@ Suppose we had a voting threshold of 0.5, so both models need to vote for a cliq
 
 ![The detection graph with the selected maximum clique emphasized]({{ site.github.url }}/assets/img/obj/ex-4.jpeg)
 _Results of ensemble detection after voting: only accept Clique 1._
+{: .caption}
 
 After voting, we only accept Clique 1. We finally compute the combined score of Clique 1 as a function of its inferences, and output a representative bounding box for this clique with that combined score as its confidence score.
 
@@ -133,6 +139,7 @@ We hope other computer vision teams can apply this technique to make more accura
 
 ![Animation of an ensemble model combining detections around a knife in a suitcase X-ray]({{ site.github.url }}/assets/img/obj/detections.gif)
 _Some cool detections we’ve made at Synapse Technology, including handguns, gun parts, ammunition, razor blades, and fixed and folding knives._
+{: .caption}
 
 *I designed and implemented this system over the course of my one-month internship at [Synapse Technology][synapse] ([acquired][acquisition]) this January. Thanks to my mentor Steven for thoughtful design documents and whiteboard sessions. Thanks to Sims for encouraging me to share my work, as well as the rest of the engineering team for a fun and productive internship.*
 
