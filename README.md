@@ -22,11 +22,12 @@ installed.
 
 Run `./scripts/serve.sh` and open <http://localhost:4000>.
 
-To format, run `mise exec -- oxfmt .`. To run the same check CI runs:
+To format, run `mise exec -- oxfmt .`. To run the checks that do not require a
+site build:
 
 ```sh
 mise exec -- oxfmt --check .
-mise exec -- bundle exec ruby scripts/check-link-definition-order.rb
+mise exec -- bundle exec ruby test/run.rb
 ```
 
 To verify a production build, run:

@@ -11,4 +11,5 @@ end
 
 group :test do
   gem "html-proofer", "~> 5.2"
+  gem "minitest", "~> 6.0"
 end

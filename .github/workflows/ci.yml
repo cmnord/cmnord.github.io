@@ -31,14 +31,8 @@ jobs:
         with:
           ruby-version: mise.toml
           bundler-cache: true
-      - name: Check Markdown link definition order
-        run: bundle exec ruby scripts/check-link-definition-order.rb
-      # Protect the compatibility fix for sites that stream link-preview
-      # metadata after the document head, as Every currently does.
-      - name: Check streamed Open Graph metadata
-        run: bundle exec ruby scripts/check-streamed-open-graph.rb
-      - name: Check link preview URL security
-        run: bundle exec ruby scripts/check-link-preview-security.rb
+      - name: Run Ruby tests
+        run: bundle exec ruby test/run.rb
       - name: Build with Jekyll
         run: bundle exec jekyll build --strict_front_matter
         env:
