@@ -16,4 +16,9 @@ if [ ! -x "$mise_bin" ]; then
 fi
 
 port="${CONDUCTOR_PORT:-4000}"
-exec "$mise_bin" exec -- bundle exec jekyll serve --livereload --port "$port"
+livereload_port="$((port + 1))"
+
+exec "$mise_bin" exec -- bundle exec jekyll serve \
+  --livereload \
+  --port "$port" \
+  --livereload-port "$livereload_port"

@@ -17,6 +17,10 @@ if [ -z "$mise_bin" ]; then
   fi
 fi
 
+# mise-managed tools may invoke mise again from hooks (for example, RubyGems
+# reshimming after an install), so its directory must also be on PATH.
+export PATH="$(dirname "$mise_bin"):$PATH"
+
 "$mise_bin" trust
 MISE_RUBY_COMPILE=false "$mise_bin" install
 "$mise_bin" exec -- gem install bundler --version 4.0.17
