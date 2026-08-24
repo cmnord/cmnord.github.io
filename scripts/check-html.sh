@@ -19,6 +19,9 @@ htmlproofer_ignored_urls=(
   '/groups\.mit\.edu/webmoira/list/hkn-interest/'
   '/d-lab\.mit\.edu/research-about/'
 
+  # MIT DSpace intermittently rejects automated link checks with status 405.
+  '/dspace\.mit\.edu/'
+
   # Waterpik intermittently returns 503 to automated link checks.
   '/waterpik\.com/'
 
