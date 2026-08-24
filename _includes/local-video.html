@@ -1,0 +1,38 @@
+{% comment %}
+  Renders an MP4 stored with the site as an accessible native video, plus a
+  plain link for email and print.
+
+  Usage:
+    {% include local-video.html
+      src="/assets/video/demo.mp4"
+      title="Product demonstration"
+      caption="A short demonstration of the product."
+      autoplay=true
+      loop=true
+      muted=true
+      controls=false
+    %}
+{% endcomment %}
+{%- assign video_src = include.src -%}
+{%- unless video_src contains "://" -%}
+  {%- assign video_src = video_src | relative_url -%}
+{%- endunless -%}
+<figure class="local-video">
+  <video
+    class="local-video__player"
+    aria-label="{{ include.title | escape }}"
+    preload="metadata"
+    {% unless include.controls == false %}controls{% endunless %}
+    {% if include.autoplay %}autoplay{% endif %}
+    {% if include.loop %}loop{% endif %}
+    {% if include.muted %}muted{% endif %}
+    playsinline
+  >
+    <source src="{{ video_src | escape }}" type="video/mp4">
+    <a href="{{ video_src | escape }}">Watch {{ include.title | escape }}</a>.
+  </video>
+  <figcaption>{{ include.caption | escape }}</figcaption>
+  <p class="local-video__email-fallback">
+    <a href="{{ video_src | escape }}">Watch {{ include.title | escape }}</a>
+  </p>
+</figure>

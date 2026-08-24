@@ -16,8 +16,29 @@ _[42nd IEEE Real-Time Systems Symposium (RTSS 2021)][rtss]_
 
 :medal_sports: Outstanding Paper Award
 
-[[DOI]][tortis-doi] [[Artifact]][tortis-artifact] [[2-minute talk]][tortis-teaser]
-[[15-minute talk]][tortis-talk]
+[[DOI]][tortis-doi] [[Artifact]][tortis-artifact]
+
+<details markdown="1">
+<summary>2-minute talk</summary>
+
+{% include local-video.html
+  src="/assets/video/RTSS2021-TORTIS-teaser.mp4"
+  title="TORTIS two-minute talk"
+  caption="A two-minute overview of TORTIS, presented at RTSS 2021."
+%}
+
+</details>
+
+<details markdown="1">
+<summary>15-minute talk</summary>
+
+{% include local-video.html
+  src="/assets/video/RTSS2021-TORTIS-talk.mp4"
+  title="TORTIS fifteen-minute talk"
+  caption="The full fifteen-minute TORTIS talk from RTSS 2021."
+%}
+
+</details>
 
 ## [Retry-Free Software Transactional Memory for Rust][thesis-pdf]
 
@@ -40,5 +61,3 @@ _* indicates equal contribution._
 [tortis-code]: https://github.com/mit-ll/TORTIS
 [tortis-doi]: https://doi.org/10.1109/RTSS52674.2021.00049
 [tortis-pdf]: https://www.cs.unc.edu/~anderson/papers/rtss21a.pdf
-[tortis-talk]: {{site.github.url}}/assets/video/RTSS2021-TORTIS-talk.mp4
-[tortis-teaser]: {{site.github.url}}/assets/video/RTSS2021-TORTIS-teaser.mp4
