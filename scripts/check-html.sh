@@ -19,6 +19,9 @@ htmlproofer_ignored_urls=(
   '/groups\.mit\.edu/webmoira/list/hkn-interest/'
   '/d-lab\.mit\.edu/research-about/'
 
+  # Waterpik intermittently returns 503 to automated link checks.
+  '/waterpik\.com/'
+
   # These domains reject or rate-limit automated link checks.
   '/beaumont\.org/'
   '/lesswrong\.com/'

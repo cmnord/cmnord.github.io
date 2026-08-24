@@ -23,8 +23,8 @@ _[42nd IEEE Real-Time Systems Symposium (RTSS 2021)][rtss]_
 
 {% include local-video.html
   src="/assets/video/RTSS2021-TORTIS-teaser.mp4"
+  poster="/assets/img/research/tortis-teaser-poster.jpg"
   title="TORTIS two-minute talk"
-  caption="A two-minute overview of TORTIS, presented at RTSS 2021."
 %}
 
 </details>
@@ -34,8 +34,8 @@ _[42nd IEEE Real-Time Systems Symposium (RTSS 2021)][rtss]_
 
 {% include local-video.html
   src="/assets/video/RTSS2021-TORTIS-talk.mp4"
+  poster="/assets/img/research/tortis-talk-poster.jpg"
   title="TORTIS fifteen-minute talk"
-  caption="The full fifteen-minute TORTIS talk from RTSS 2021."
 %}
 
 </details>
