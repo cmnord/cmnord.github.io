@@ -1,17 +1,14 @@
-<span class="post-date">
-  {{ site.data.settings.post_date_prefix }}
-  {% assign d = page.date | date: "%-d"  %}
-  {{ page.date | date: "%B" }}
-  {% case d %}
-    {% when '1' or '21' or '31' %}{{ d }}st
-    {% when '2' or '22' %}{{ d }}nd
-    {% when '3' or '23' %}{{ d }}rd
-    {% else %}{{ d }}th{% endcase %},
-  {{ page.date | date: "%Y" }}
-  by
-  {% if page.author %}
-    {{ page.author }}
-  {% else %}
-    {{ site.author }}
+<div class="post-meta">
+  <span>{{ page.date | date: "%-d %b %Y" }}</span>
+  {% if page.shared %}
+    <span>
+      &mdash; shared on
+      {% for item in page.shared -%}
+        <a href="{{ item.url }}"{% if item.url contains 'news.ycombinator.com' %} data-proofer-ignore{% endif %}>{{ item.name }}</a>
+        {%- unless forloop.last -%}
+          {%- if forloop.rindex == 2 %} and {% else %}, {% endif -%}
+        {%- endunless -%}
+      {%- endfor %}
+    </span>
   {% endif %}
-</span>
+</div>

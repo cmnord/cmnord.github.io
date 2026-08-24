@@ -4,6 +4,9 @@ title: "How to Un-Break Your Jaw"
 date: 2018-01-09
 description: "The story of how I broke my jaw, got surgery, and healed (8-week process)"
 tags: [personal essay, health, injury, broken jaw, bones, recovery]
+shared:
+  - name: Medium
+    url: https://medium.com/@cnord/how-to-un-break-your-jaw-f6f24c269c88
 ---
 
 **TL;DR: sleep is important**
@@ -363,8 +366,7 @@ was ever going to be okay again. Reading about other people’s experiences help
 me get a feel for what I should expect, so I hope that someone can benefit from
 reading about my experience.
 
-_Thanks to Noah Moroze and Kimberli Zhong for feedback. This blog post was
-cross-posted on Medium [here][medium]._
+_Thanks to Noah Moroze and Kimberli Zhong for feedback._
 
 [arch-bar-img]: https://media.aofoundation.org/-/jssmedia/surgery/91/91_x010_i180.png?w=665
 [arch-bars]: https://surgeryreference.aofoundation.org/cmf/basic-technique/maxillomandibular-fixation-mmf
@@ -375,7 +377,6 @@ cross-posted on Medium [here][medium]._
 [internal-fixation]: https://en.wikipedia.org/wiki/Internal_fixation
 [lidocaine]: https://en.wikipedia.org/wiki/Lidocaine
 [mandibular-fractures]: https://commons.wikimedia.org/wiki/File:Mandbular_fractures.png
-[medium]: https://medium.com/@cnord/how-to-un-break-your-jaw-f6f24c269c88
 [mgh]: https://www.massgeneral.org/
 [orthodontic-wax]: https://www.wikihow.com/Apply-Dental-Wax-on-Braces
 [panoramic]: https://en.wikipedia.org/wiki/Panoramic_radiograph

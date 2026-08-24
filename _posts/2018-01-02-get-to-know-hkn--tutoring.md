@@ -4,6 +4,9 @@ title:	"Get to know HKN: Tutoring"
 date:	2018-01-02
 description: "About MIT HKN's tutoring program"
 tags: [MIT, education, tutoring]
+shared:
+  - name: Medium
+    url: https://medium.com/mit-hkn/get-to-know-hkn-tutoring-b07267128c93
 ---
 
 [HKN][hkn], the Course 6 honor society at MIT, is often thought of as the club that hosts free food study breaks, the [underground guide][underground-guide] to Course 6 classes, and the occasional resume review event. However, there’s much more than free boba and Chipotle— one of the most important services HKN offers is the opportunity to tutor and be tutored.
@@ -38,14 +41,13 @@ Peer teaching is a key part of the MIT undergraduate experience! Take advantage 
 
 If you want announcements for HKN events, add yourself to hkn-interest@ [here][hkn-interest]. If you have ideas for how to improve tutoring or anything else Course 6, contact HKN at [hkn-officers@mit.edu][hkn-officers-email], or the tutoring officers in particular at [hkn-tutoring@mit.edu][hkn-tutoring-email].
 
-_Thanks to Nalini Singh and Noah Moroze for feedback. This blog post was cross-posted on Medium [here][medium]._
+_Thanks to Nalini Singh and Noah Moroze for feedback._
 
 [flipped-classroom]: https://en.wikipedia.org/wiki/Flipped_classroom
 [hkn]: https://hkn.mit.edu/
 [hkn-interest]: https://groups.mit.edu/webmoira/list/hkn-interest
 [hkn-officers-email]: mailto:hkn-officers@mit.edu
 [hkn-tutoring-email]: mailto:hkn-tutoring@mit.edu
-[medium]: https://medium.com/mit-hkn/get-to-know-hkn-tutoring-b07267128c93
 [registrar]: https://registrar.mit.edu/stats-reports/majors-count/2017-2018 "MIT Registrar’s Office Enrollment Statistics, Fall 2017–2018"
 [signup]: https://hkn-tutoring2.mit.edu/
 [tutoring-statistics]: https://medium.com/mit-hkn/mit-hkn-tutoring-service-a303d6d6bfa5
