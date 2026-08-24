@@ -27,6 +27,9 @@ htmlproofer_ignored_urls=(
   '/stackoverflow\.com/'
   '/tizen\.org/'
 
+  # LessWrong rate limits automated link checks with status 429.
+  '/lesswrong\.com/'
+
   # LinkedIn rejects automated link checks with status 999.
   '/linkedin\.com/'
   # Unsplash rejects automated link checks with status 401.
