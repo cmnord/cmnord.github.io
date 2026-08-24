@@ -294,6 +294,7 @@ DEPENDENCIES
   jekyll-target-blank (~> 2.0)
   jemoji (~> 0.13)
   lagrange!
+  minitest (~> 6.0)
   ostruct (~> 0.6)
 
 CHECKSUMS
