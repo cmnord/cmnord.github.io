@@ -20,7 +20,7 @@ layout: default
         </h2>
         {% assign teaser = post.description | default: post.excerpt %}
         <p class="post-list-description">
-          {{ teaser | strip_html | strip_newlines | truncate: 180 }}
+          {{ teaser | markdownify | strip_html | strip_newlines | truncate: 180 }}
         </p>
         <p class="post-list-meta">
           <time datetime="{{ post.date | date_to_xmlschema }}">

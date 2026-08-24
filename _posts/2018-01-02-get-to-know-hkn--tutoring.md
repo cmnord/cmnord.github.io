@@ -26,11 +26,11 @@ Tutoring can be especially helpful for classes like 6.036, which switched to a [
 
 #### Why tutor for HKN?
 
-> “It was p fun” ~Anthony Liu ‘19
+> “It was p fun” ~Anthony Liu ’19
 
 Aside from being paid $15/hour by the EECS department or earning HKN volunteer hours, tutoring is a great chance to sharpen your understanding of past class material, meet new people, learn about other MIT students’ study habits, and give back to the Course 6 community. HKN eligible Anthony Liu ’19 says that tutoring 6.046 helped him keep up with algorithms, which was good for interviewing. “My tutee would usually have some topics in mind and I would explain them, like a super personal recitation”, Liu says. “Before tests my tutee often wanted to do an extra hour, and we’d do more problems. I’d give test taking advice too — it was pretty fun.”
 
-If you’ve considered TAing a class, tutoring is a great lower-commitment way to try it out without being responsible for course management (grading, writing problems, discipline/fairness, etc.). In fact, Sooraj ‘19 decided to TA 6.036 because of how much he enjoyed tutoring. “I think I’ve enjoyed teaching/explaining things for a long time now, and I like helping friends out with psets on classes I’ve taken before”, he says. Previous tutoring experience can also strengthen your TA application.
+If you’ve considered TAing a class, tutoring is a great lower-commitment way to try it out without being responsible for course management (grading, writing problems, discipline/fairness, etc.). In fact, Sooraj ’19 decided to TA 6.036 because of how much he enjoyed tutoring. “I think I’ve enjoyed teaching/explaining things for a long time now, and I like helping friends out with psets on classes I’ve taken before”, he says. Previous tutoring experience can also strengthen your TA application.
 
 #### In Summary
 

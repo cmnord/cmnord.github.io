@@ -37,7 +37,7 @@ before it happened.
 - [The Surgery](#the-surgery)
 - [Immediately Post-Op](#immediately-post-op)
 - [1 Day Post-Op](#1-day-post-op)
-- [2-3 Days Post-Op](#2-3-days-post-op)
+- [2–3 Days Post-Op](#23-days-post-op)
 - [4 Days Post-Op](#4-days-post-op)
 - [Week 1](#week-1)
 - [Week 2](#week-2)
@@ -140,7 +140,7 @@ I was given 5 medications:
 
 At the end of the day I finally had my IV taken out and went home!
 
-### 2-3 Days Post-Op
+### 2–3 Days Post-Op
 
 For the next few days I just took medicine and rested. I used a bed wedge at
 home to rest with my head elevated and ordered one for school too. I could only
