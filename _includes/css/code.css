@@ -105,28 +105,3 @@ pre.highlight.code-nowrap {
     font-size: 12px;
   }
 }
-/* Gist via GitHub Pages */
-.gist .gist-file {
-  font-family: var(--font-code) !important;
-}
-
-.gist .markdown-body {
-  padding: 15px;
-}
-
-.gist pre {
-  padding: 0;
-  background-color: transparent;
-}
-
-.gist .gist-file .gist-data {
-  font-size: 0.8rem !important;
-  line-height: 1.4;
-}
-
-.gist code {
-  padding: 0;
-  color: inherit;
-  background-color: transparent;
-  border-radius: 0;
-}
