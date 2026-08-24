@@ -8,39 +8,70 @@ repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$repo_root"
 
 htmlproofer_ignored_urls=(
-  # Business Wire closes the checker's HTTP/2 connection with an internal error.
+  # --- Status 0: transport-level failures ---
+
+  # Business Wire closes the HTTP/2 connection with an internal error.
   '/businesswire\.com/'
-  # These MIT HKN sites present certificate chains the checker cannot validate.
+  # This historical site works over HTTP but has no valid HTTPS endpoint.
+  '/catb\.org/'
+  # This archived MIT site intermittently times out in CI.
+  '/d-lab\.mit\.edu/'
+  # Automated link checks intermittently time out.
+  '/goodreads\.com/'
+  # This archived MIT site intermittently times out in CI.
+  '/groups\.mit\.edu/'
+  # This MIT HKN site presents an invalid certificate chain.
   '/hkn\.mit\.edu/'
+  # This MIT HKN site presents an invalid certificate chain.
   '/hkn-tutoring2\.mit\.edu/'
+  # This historical site works over HTTP but has no valid HTTPS endpoint.
+  '/mobiletechnologylab\.org/'
+  # This MIT HKN site presents an invalid certificate chain.
   '/underground-guide\.mit\.edu/'
 
-  # These archived MIT links intermittently time out in GitHub Actions.
-  '/groups\.mit\.edu/webmoira/list/hkn-interest/'
-  '/d-lab\.mit\.edu/research-about/'
+  # --- Status 401: unauthorized ---
 
-  # MIT DSpace intermittently rejects automated link checks with status 405.
-  '/dspace\.mit\.edu/'
+  # Unsplash rejects automated clients.
+  '/unsplash\.com/'
 
-  # Waterpik intermittently returns 503 to automated link checks.
-  '/waterpik\.com/'
+  # --- Status 403: forbidden ---
 
-  # These domains reject or rate-limit automated link checks.
+  # Beaumont rejects automated clients.
   '/beaumont\.org/'
-  '/lesswrong\.com/'
+  # Fandom presents automated clients with a Cloudflare challenge.
+  '/fandom\.com/'
+  # Medium rejects automated clients.
   '/medium\.com/'
+  # The Free Dictionary rejects automated clients.
   '/medical-dictionary\.thefreedictionary\.com/'
+  # Google Scholar rejects automated clients.
   '/scholar\.google\.com/'
+  # Stack Overflow rejects automated clients.
   '/stackoverflow\.com/'
+  # Tizen rejects automated clients.
   '/tizen\.org/'
 
-  # LessWrong rate limits automated link checks with status 429.
-  '/lesswrong\.com/'
+  # --- Status 405: method not allowed ---
 
-  # LinkedIn rejects automated link checks with status 999.
+  # MIT DSpace intermittently rejects automated requests.
+  '/dspace\.mit\.edu/'
+
+  # --- Status 429: too many requests ---
+
+  # LessWrong rate-limits automated clients.
+  '/lesswrong\.com/'
+  # Hacker News rate-limits automated clients.
+  '/news\.ycombinator\.com/'
+
+  # --- Status 503: service unavailable ---
+
+  # Waterpik intermittently rejects automated checks.
+  '/waterpik\.com/'
+
+  # --- Status 999: nonstandard request denial ---
+
+  # LinkedIn rejects automated clients.
   '/linkedin\.com/'
-  # Unsplash rejects automated link checks with status 401.
-  '/unsplash\.com/'
 )
 
 htmlproofer_ignore_arg=$(IFS=,; echo "${htmlproofer_ignored_urls[*]}")
