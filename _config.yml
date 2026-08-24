@@ -17,6 +17,20 @@ plugins:
   - jemoji
   # Adds content hashes to local asset URLs so deploys bypass stale caches.
   - jekyll-cache-bust
+  # Turns <https://example.com> as its own paragraph into a static link preview.
+  # The angle brackets are kramdown's autolink syntax; without them, the URL is
+  # plain text and the plugin has no link to enhance. The plugin fetches the
+  # linked page's metadata during the build; ogp.html and fallback.html control
+  # the generated markup.
+  - jekyll-embed-urls
+
+embed:
+  attributes:
+    # Do not tell remote image hosts which page on this domain loaded them.
+    referrerpolicy: no-referrer
+    # The embed plugin runs before jekyll-target-blank. Suppress its rel values
+    # so jekyll-target-blank adds one copy of "noopener noreferrer", not two.
+    rel: false
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title: "Claire Nord"

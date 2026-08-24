@@ -99,11 +99,17 @@ def email_body(post, canonical_url)
     wrapper.replace(pre.unlink)
   end
 
+  # Email links must be absolute because the message is read off-site.
   article.css("a[href]").each do |link|
     link["href"] = absolute_url(canonical_url, link["href"])
   end
+  # Email clients cannot resolve the website's relative image paths.
   article.css("img[src]").each do |image|
     image["src"] = absolute_url(canonical_url, image["src"])
+  end
+  # Video files live in source elements rather than on the video element.
+  article.css("source[src]").each do |source|
+    source["src"] = absolute_url(canonical_url, source["src"])
   end
 
   source_name = URI(canonical_url).host&.delete_prefix("www.") || canonical_url
