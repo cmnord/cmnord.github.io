@@ -1,4 +1,5 @@
 <head>
+  {% include google-analytics.html %}
   {% assign build_version = site.time | date: "%s" %}
   <title>
     {% if page.title == "Home" %}
@@ -29,9 +30,6 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=fallback">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
-
-  <!-- Google Analytics -->
-  {% include google-analytics.html %}
   <!-- Use Jekyll SEO plugin -->
   {% seo title=false %}
   {% for tag in page.tags %}
