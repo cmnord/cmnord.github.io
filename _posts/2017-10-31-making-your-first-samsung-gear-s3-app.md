@@ -9,8 +9,7 @@ shared:
     url: https://medium.com/@cnord/making-your-first-samsung-gear-s3-app-363947cdf7fd
 ---
 
-<!-- HTMLProofer: preserve this historical URL; its HTTP site works but its HTTPS endpoint does not. -->
-When I started my research project in the MIT [D-Lab][d-lab] [Mobile Technology Lab][mtl]{: data-proofer-ignore="" } I was excited to build my first smartwatch app using the [Samsung Gear S3][gear-s3]. Despite being super excited about the project, setting up the development environment took me an entire month :anguished: Here’s how to get to the Hello World stage 10x faster than I did.
+When I started my research project in the MIT [D-Lab][d-lab] [Mobile Technology Lab][mtl] I was excited to build my first smartwatch app using the [Samsung Gear S3][gear-s3]. Despite being super excited about the project, setting up the development environment took me an entire month :anguished: Here’s how to get to the Hello World stage 10x faster than I did.
 
 ![A Samsung Gear S3 displaying “Hello D-Lab!” and the time]({{ site.github.url }}/assets/img/watch/goal.jpeg){: .hero-image}
 _The goal for this tutorial._

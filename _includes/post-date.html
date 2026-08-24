@@ -4,7 +4,7 @@
     <span>
       &mdash; shared on
       {% for item in page.shared -%}
-        <a href="{{ item.url }}"{% if item.url contains 'news.ycombinator.com' %} data-proofer-ignore{% endif %}>{{ item.name }}</a>
+        <a href="{{ item.url }}">{{ item.name }}</a>
         {%- unless forloop.last -%}
           {%- if forloop.rindex == 2 %} and {% else %}, {% endif -%}
         {%- endunless -%}
