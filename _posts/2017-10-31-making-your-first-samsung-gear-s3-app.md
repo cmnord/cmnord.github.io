@@ -4,6 +4,9 @@ title:	"Making Your First Samsung Gear S3 App"
 date:	2017-10-31
 description: "Learn from my mistakes and set up Tizen Studio to make your first Gear app"
 tags: [software engineering, tizen, samsung, samsung gear s3, smartwatch, wearables, tutorial]
+shared:
+  - name: Medium
+    url: https://medium.com/@cnord/making-your-first-samsung-gear-s3-app-363947cdf7fd
 ---
 
 <!-- HTMLProofer: preserve this historical URL; its HTTP site works but its HTTPS endpoint does not. -->
@@ -66,14 +69,11 @@ Now, you should be able to select the Samsung security profile, then continue th
 
 Feel free to email me (cnord@school) if you have any questions, comments, or tips about Samsung Gear development.
 
-_This blog post was cross-posted on Medium [here][medium]._
-
 [d-lab]: https://d-lab.mit.edu/research-about
 [gear-s3]: https://www.samsung.com/us/explore/gear-s3/
 [haxm]: https://software.intel.com/en-us/articles/intel-hardware-accelerated-execution-manager-intel-haxm
 [haxm-instructions]: https://stackoverflow.com/questions/26455759/installing-haxm-on-osx-yosemite
 [ide]: https://en.wikipedia.org/wiki/Integrated_development_environment
-[medium]: https://medium.com/@cnord/making-your-first-samsung-gear-s3-app-363947cdf7fd
 [mtl]: http://www.mobiletechnologylab.org/
 [tizen]: https://www.tizen.org/?langswitch=en
 [tizen-developers]: https://developer.tizen.org/?langswitch=en

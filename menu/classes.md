@@ -16,5 +16,5 @@ description: "Notable classes I took during university at MIT (mostly computer s
 
 - [Harvard] Advanced Modern Japanese <span class="course-number">Japan 140A, 140B</span>
 - Digital Media in Japan and Korea <span class="course-number">21G.597</span>
-- Japanese 4-6 <span class="course-number">21G.504, 505, 506</span>
+- Japanese 4–6 <span class="course-number">21G.504, 505, 506</span>
 - Visualizing Japan in the Modern World <span class="course-number">21G.027</span>

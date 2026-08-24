@@ -4,6 +4,9 @@ title: "How to Un-Break Your Jaw"
 date: 2018-01-09
 description: "The story of how I broke my jaw, got surgery, and healed (8-week process)"
 tags: [personal essay, health, injury, broken jaw, bones, recovery]
+shared:
+  - name: Medium
+    url: https://medium.com/@cnord/how-to-un-break-your-jaw-f6f24c269c88
 ---
 
 **TL;DR: sleep is important**
@@ -37,7 +40,7 @@ before it happened.
 - [The Surgery](#the-surgery)
 - [Immediately Post-Op](#immediately-post-op)
 - [1 Day Post-Op](#1-day-post-op)
-- [2-3 Days Post-Op](#2-3-days-post-op)
+- [2–3 Days Post-Op](#23-days-post-op)
 - [4 Days Post-Op](#4-days-post-op)
 - [Week 1](#week-1)
 - [Week 2](#week-2)
@@ -140,7 +143,7 @@ I was given 5 medications:
 
 At the end of the day I finally had my IV taken out and went home!
 
-### 2-3 Days Post-Op
+### 2–3 Days Post-Op
 
 For the next few days I just took medicine and rested. I used a bed wedge at
 home to rest with my head elevated and ordered one for school too. I could only
@@ -363,8 +366,7 @@ was ever going to be okay again. Reading about other people’s experiences help
 me get a feel for what I should expect, so I hope that someone can benefit from
 reading about my experience.
 
-_Thanks to Noah Moroze and Kimberli Zhong for feedback. This blog post was
-cross-posted on Medium [here][medium]._
+_Thanks to Noah Moroze and Kimberli Zhong for feedback._
 
 [arch-bar-img]: https://media.aofoundation.org/-/jssmedia/surgery/91/91_x010_i180.png?w=665
 [arch-bars]: https://surgeryreference.aofoundation.org/cmf/basic-technique/maxillomandibular-fixation-mmf
@@ -375,7 +377,6 @@ cross-posted on Medium [here][medium]._
 [internal-fixation]: https://en.wikipedia.org/wiki/Internal_fixation
 [lidocaine]: https://en.wikipedia.org/wiki/Lidocaine
 [mandibular-fractures]: https://commons.wikimedia.org/wiki/File:Mandbular_fractures.png
-[medium]: https://medium.com/@cnord/how-to-un-break-your-jaw-f6f24c269c88
 [mgh]: https://www.massgeneral.org/
 [orthodontic-wax]: https://www.wikihow.com/Apply-Dental-Wax-on-Braces
 [panoramic]: https://en.wikipedia.org/wiki/Panoramic_radiograph

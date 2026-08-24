@@ -9,10 +9,6 @@
   overflow-wrap: break-word;
 }
 
-.content-container {
-  margin-bottom: 4rem;
-}
-
 /*48em*/
 @media (max-width: 768px) {
   .container {
@@ -187,13 +183,4 @@
 
 .footer a:hover {
   color: var(--color-text);
-}
-
-.footer-description {
-  display: block;
-  margin-top: 3px;
-  margin-bottom: 1rem;
-  color: var(--color-muted);
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
 }

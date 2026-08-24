@@ -65,16 +65,10 @@
 
 .fa-envelope,
 .fa-bluesky,
-.fa-instagram,
 .fa-github,
 .fa-linkedin,
 .fa-x-twitter,
-.fa-pinterest,
-.fa-medium,
-.fa-codepen,
-.fa-rss-square,
-.fa-book,
-.fa-podcast {
+.fa-book {
   color: var(--icon-color);
   padding: 5px;
 }
@@ -87,10 +81,6 @@
   --icon-color: #1185fe;
 }
 
-.fa-instagram {
-  --icon-color: #375989;
-}
-
 .fa-github {
   --icon-color: #343434;
 }
@@ -99,21 +89,8 @@
   --icon-color: #0073a4;
 }
 
-.fa-x-twitter,
-.fa-codepen {
+.fa-x-twitter {
   --icon-color: #000;
-}
-
-.fa-pinterest {
-  --icon-color: #bd081c;
-}
-
-.fa-medium {
-  --icon-color: #00ab6c;
-}
-
-.fa-rss-square {
-  --icon-color: #ff6600;
 }
 
 /* https://brandcolors.net/b/goodreads */
@@ -121,21 +98,14 @@
   --icon-color: #553b08;
 }
 
-/* https://www.schemecolor.com/apple-podcasts-app-icon-2017-colors.php */
-.fa-podcast {
-  --icon-color: #872ec4;
-}
-
 html[data-theme="dark"] .fa-github,
-html[data-theme="dark"] .fa-x-twitter,
-html[data-theme="dark"] .fa-codepen {
+html[data-theme="dark"] .fa-x-twitter {
   --icon-color: #ededed;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .fa-github,
-  :root:not([data-theme="light"]) .fa-x-twitter,
-  :root:not([data-theme="light"]) .fa-codepen {
+  :root:not([data-theme="light"]) .fa-x-twitter {
     --icon-color: #ededed;
   }
 }

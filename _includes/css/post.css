@@ -13,6 +13,17 @@
   line-height: 20px;
 }
 
+.post-meta {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  color: var(--color-muted);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 20px;
+}
+
 .post-title,
 .page-title {
   margin: 0;

@@ -4,6 +4,11 @@ title:	"Tech Deep-Dive: Object Detection Ensembles as Graph Cliques"
 date:	2019-03-14
 description: "My intern project for Synapse Technology (acquired) on composing multiple CV models for better output"
 tags: [software engineering, machine learning, computer vision, algorithms]
+shared:
+  - name: Hacker News
+    url: https://news.ycombinator.com/item?id=19391543
+  - name: Medium
+    url: https://medium.com/synapse-blog/tech-deep-dive-object-detection-ensembles-as-graph-cliques-a7f7d33b5477
 ---
 
 Object detection is one important type of computer vision task: given an image, localize and identify the relevant objects in it.
@@ -143,13 +148,12 @@ _Some cool detections we’ve made at Synapse Technology, including handguns, gu
 
 *I designed and implemented this system over the course of my one-month internship at [Synapse Technology][synapse] ([acquired][acquisition]) this January. Thanks to my mentor Steven for thoughtful design documents and whiteboard sessions. Thanks to Sims for encouraging me to share my work, as well as the rest of the engineering team for a fun and productive internship.*
 
-_Thanks to Noah Moroze, Simanta Gautam, Bruno B. Ferrari Faviero, Ian Cinnamon, and Sanjeevani Lakshmivarahan for feeback. This blog post was cross-posted on Medium [here][medium]._
+_Thanks to Noah Moroze, Simanta Gautam, Bruno B. Ferrari Faviero, Ian Cinnamon, and Sanjeevani Lakshmivarahan for feeback._
 
 [acquisition]: https://www.businesswire.com/news/home/20200610005917/en/Rapiscan-Continues-Innovation-Leadership-with-Acquisition-of-Advanced-Artificial-Intelligence-AI-Technology
 [ai-performance]: https://medium.com/synapse-blog/ai-outperforms-certified-xray-operators-972932086f2e
 [ancaro-project]: https://unsplash.com/photos/6VQlKJp2vpo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 [cognitive-fatigue]: https://medium.com/synapse-blog/tsa-missed-at-least-three-firearms-in-2018-why-theyll-keep-missing-threats-in-2019-5176ea0773bf
 [intersection-over-union]: https://en.wikipedia.org/wiki/Jaccard_index
-[medium]: https://medium.com/synapse-blog/tech-deep-dive-object-detection-ensembles-as-graph-cliques-a7f7d33b5477
 [synapse]: https://www.forbes.com/profile/synapse-technology-corporation/
 [unsplash]: https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
