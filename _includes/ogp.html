@@ -1,0 +1,25 @@
+{% comment %}
+  Renders the link preview built from a page's Open Graph metadata.
+  jekyll-embed-urls requires this exact filename as its template entry point.
+{% endcomment %}
+<a
+  class="rich-link{% unless page.image %} rich-link--without-image{% endunless %}"
+  href="{{ page.url | escape }}"
+  {% if page.locale %}lang="{{ page.locale }}"{% endif %}
+>
+  <span class="rich-link__body">
+    <strong class="rich-link__title">{{ page.title | default: page.url | escape }}</strong>
+    {% assign description = page.description | strip_html | strip %}
+    {% unless description == empty %}
+      <span class="rich-link__description">{{ description | escape }}</span>
+    {% endunless %}
+    <span class="rich-link__url">{{ page.url | escape }}</span>
+  </span>
+  {% if page.image %}
+    <img
+      class="rich-link__image"
+      src="{{ page.image | escape }}"
+      alt="{{ page.title | default: page.url | append: ' preview' | escape }}"
+    >
+  {% endif %}
+</a>

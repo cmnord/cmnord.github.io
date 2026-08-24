@@ -162,22 +162,18 @@ walk into the sunset building freely :)
 I read these after writing the above post.
 These writers are thinking along similar lines!
 
-- [Compound Engineering: How Every Codes With Agents][compound-engineering], Dan
-  Shipper and Kieran Klaassen
-- [AI demands more engineering discipline. Not less][ai-discipline], Charity
-  Majors
-- [Stop trying to review AI's code faster: bet on rollback
-  instead][bet-on-rollback], Quentin Rousseau
+<https://every.to/chain-of-thought/compound-engineering-how-every-codes-with-agents>
+
+<https://charity.wtf/p/ai-demands-more-engineering-discipline>
+
+<https://rootly.com/blog/stop-trying-to-review-ais-code-faster-bet-on-rollbacks-instead>
 
 [^pre-ai]: Pre-AI.
 [^chicken-farm]: Or [chicken farm][conductor-farm] on my phone
 
-[ai-discipline]: https://charity.wtf/p/ai-demands-more-engineering-discipline
 [alon]: https://x.com/alonzuman
 [ar-vs-hr]: https://x.com/jynniit/status/2089860109707125033
-[bet-on-rollback]: https://rootly.com/blog/stop-trying-to-review-ais-code-faster-bet-on-rollbacks-instead
 [chiang-newyorker]: https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web
-[compound-engineering]: https://every.to/chain-of-thought/compound-engineering-how-every-codes-with-agents
 [conductor-farm]: https://conductor.farm
 [dri]: https://fortune.com/article/how-apple-works-inside-the-worlds-biggest-startup/
 [eas-appversion]: https://docs.expo.dev/eas-update/runtime-versions/#use-a-runtime-version-policy-that-automatically-updates-the-runtime-version-when-native-code-is-updated

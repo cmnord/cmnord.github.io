@@ -19,8 +19,9 @@ htmlproofer_ignored_urls=(
   '/groups\.mit\.edu/webmoira/list/hkn-interest/'
   '/d-lab\.mit\.edu/research-about/'
 
-  # These domains reject automated link checks with status 403.
+  # These domains reject or rate-limit automated link checks.
   '/beaumont\.org/'
+  '/lesswrong\.com/'
   '/medium\.com/'
   '/medical-dictionary\.thefreedictionary\.com/'
   '/scholar\.google\.com/'
