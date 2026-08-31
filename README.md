@@ -16,7 +16,12 @@ install Ruby, Bundler, [oxfmt][oxfmt], and the project's gems:
 ```
 
 Conductor workspaces bootstrap mise automatically when it is not already
-installed.
+installed. If your shell cannot find `mise` after setup, add its default install
+location to `PATH` for the current shell:
+
+```sh
+export PATH="$HOME/.local/bin:$PATH"
+```
 
 ## Development
 
